@@ -1,0 +1,74 @@
+import React, { useState } from 'react';
+import RenderWithMath from '../shared/RenderWithMath';
+import ScoreDashboard from '../shared/ScoreDashboard';
+
+export default function Matching_MCQ({ questions }) {
+  const [index, setIndex] = useState(0);
+  const [answers, setAnswers] = useState([]);
+  const [showDashboard, setShowDashboard] = useState(false);
+
+  const q = questions && questions.length ? questions[index] : null;
+  if (!q) return <div className="card">No Matching MCQ questions available.</div>;
+
+  const matchItems = q.content?.match_items || [];
+  const opts = q.content?.options || { A: 'A', B: 'B', C: 'C', D: 'D' };
+
+  function submitOption(opt) {
+    const correct = q.content?.answer_option || q.content?.answer || q.answer_option || q.answer;
+    const isCorrect = String(opt) === String(correct);
+
+    setAnswers(a => [
+      ...a,
+      { qIndex: index, question: q, given: opt, correct, isCorrect, explanation: q.content?.answer_explanation }
+    ]);
+
+    const next = index + 1;
+    if (next >= questions.length) setShowDashboard(true);
+    else setIndex(next);
+  }
+
+  return (
+    <div>
+      <div className="card">
+        <div className="muted">Question {index + 1} / {questions.length}</div>
+        <div style={{ marginTop: 10, fontWeight: 700 }}>
+          <RenderWithMath text={q.content?.question || ''} />
+        </div>
+
+        {/* Matching pairs */}
+        <div style={{ marginTop: 8 }}>
+          {matchItems.map((item, i) => (
+            <div key={i} style={{ marginBottom: 5 }}>
+              <RenderWithMath text={item} />
+            </div>
+          ))}
+        </div>
+
+        {/* Options A/B/C/D */}
+        <div style={{ display: 'grid', gap: 8, marginTop: 12 }}>
+          {Object.entries(opts).map(([k, v]) => (
+            <button
+              key={k}
+              className="option"
+              onClick={() => submitOption(k)}
+              style={{ textAlign: 'left' }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div><strong>{k}.</strong> <RenderWithMath text={v} /></div>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Score Dashboard */}
+      {showDashboard && (
+        <ScoreDashboard
+          answers={answers}
+          questions={questions}
+          onClose={() => { setShowDashboard(false); setAnswers([]); setIndex(0); }}
+        />
+      )}
+    </div>
+  );
+}
