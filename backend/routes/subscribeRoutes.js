@@ -20,7 +20,7 @@ const handleSubscription = async (req, res) => {
 
     // 3. Greeting mail anuppurom
     const subject = "Welcome to Dude Quizz!";
-    const DUDEQUIZZ_URL = process.env.PORT || "https://dude-quiz.vercel.app/";
+    const DUDEQUIZZ_URL ="https://dude-quiz.vercel.app/";
 
 const html = `
   <h3>Hi there,</h3>

@@ -18,7 +18,7 @@ const handleContactForm = async (req, res) => {
 
     // === 2. GREETING MAIL ANUPPUROM ===
     const subject = "Thanks for contacting Dude Quizz!";
-   const DUDEQUIZZ_URL = process.env.PORT || "https://dude-quiz.vercel.app/";
+   const DUDEQUIZZ_URL = "https://dude-quiz.vercel.app/";
 
 const html = `
   <h3>Hi ${name},</h3>
