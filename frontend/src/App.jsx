@@ -48,6 +48,8 @@ export default function App() {
 
 <Route path="/contact" element={<Contact />} /> {/* <-- Add Contact route */}
 
+<Route path="*" element={<NotFoundPage />} />
+
  </Routes>
       </main>
       <Footer />
