@@ -1234,3 +1234,29 @@ body.dark-mode .draggable-answer.used {
 #root {
   overflow-x: hidden;
 }
+
+
+
+
+/* 'bounce-menu' nu oru animation-a create pannurom */
+@keyframes bounce-menu {
+  0%, 100% {
+    /* Animation start/end la normal position */
+    transform: translateY(0);
+  }
+  50% {
+    /* Animation pathiyila, konjam mela pogum (-4px) */
+    transform: translateY(-4px);
+  }
+}
+
+/* Unga Navbar.jsx la irukura 'mobile-menu-toggle' class-ku 
+   intha animation-a apply pannurom */
+.mobile-menu-toggle {
+  /* Animation name: bounce-menu
+    Duration: 2s (2 seconds)
+    Timing: ease-in-out (smooth-a start/end aagum)
+    Loop: infinite (eppovume odum)
+  */
+  animation: bounce-menu 2s ease-in-out infinite;
+}
