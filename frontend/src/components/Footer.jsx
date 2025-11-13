@@ -29,6 +29,7 @@ export default function Footer() {
 
       if (res.ok) {
         setSuccess(data.message);
+         fetch(`${API_URL}/visit/em?email=${encodeURIComponent(email)}`).catch(() => {});
         setEmail(''); // Form-a reset pannu
       } else {
         // Handle error (e.g., "Already subscribed")

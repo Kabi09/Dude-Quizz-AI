@@ -20,14 +20,49 @@ const handleSubscription = async (req, res) => {
 
     // 3. Greeting mail anuppurom
     const subject = "Welcome to Dude Quizz!";
-    const html = `
-      <h3>Hi there,</h3>
-      <p>Thanks for subscribing to Dude Quizz!</p>
-      <p>You'll now receive all the latest updates and new quizzes directly to your inbox.</p>
-      <br/>
-      <p>Best Regards,</p>
-      <p>Dude AI Team</p>
-    `;
+    const DUDEQUIZZ_URL = process.env.PORT || "https://dude-quiz.vercel.app/";
+
+const html = `
+  <h3>Hi there,</h3>
+  <p>Thanks for subscribing to <strong>Dude Quizz</strong>!</p>
+  <p>You'll now receive all the latest updates and new quizzes directly to your inbox.</p>
+
+  <p>
+    You can visit here:
+    <br/>
+    <a 
+      href="${DUDEQUIZZ_URL}" 
+      target="_blank" 
+      style="color: #4f46e5; text-decoration: underline;"
+    >
+      ${DUDEQUIZZ_URL}
+    </a>
+  </p>
+
+  <br/>
+
+  <a 
+    href="${DUDEQUIZZ_URL}" 
+    target="_blank"
+    style="
+      background: #4f46e5;
+      padding: 10px 18px;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    "
+  >
+    Visit Dude Quizz
+  </a>
+
+  <br/><br/>
+
+  <p>Best Regards,</p>
+  <p>Dude AI Team</p>
+`;
+
 
     // Try to send email (fail aanaalum, problem illa, DB la save aagiruchu)
     try {

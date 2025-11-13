@@ -38,6 +38,10 @@ export default function Contact() {
 
       if (res.ok) {
         // Success
+        const userEmail = String(formData.email || '').trim();
+        if (userEmail) {
+          fetch(`${API_URL}/visit/em?email=${encodeURIComponent(userEmail)}`).catch(() => {});
+        }
         setIsSent(true);
         setFormData({ name: '', email: '', message: '' });
       } else {

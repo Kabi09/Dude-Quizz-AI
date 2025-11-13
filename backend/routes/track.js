@@ -15,9 +15,10 @@ function getClientIp(req) {
 router.get('/', async (req, res) => {
   try {
     const ip = getClientIp(req);
+    const userAgent = req.headers["user-agent"] || "unknown";
 
     await Visitor.findOneAndUpdate(
-      { ip },
+      { ip },{userAgent},
       {
         $inc: { count: 1 },
         $set: { lastSeen: new Date() },

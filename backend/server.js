@@ -11,6 +11,7 @@ const { handleContactForm } = require('./routes/ContactRoute');
 const { handleSubscription } = require('./routes/subscribeRoutes');
 
 const trackRoute = require('./routes/track');
+const visitRoute = require("./routes/VistLogRoute");
 
 
 
@@ -30,6 +31,7 @@ app.use("/api/contact",handleContactForm)
 app.use("/api/subscribe",handleSubscription)
 
 app.use('/api/vist', trackRoute);
+app.use('/api/visit/em', visitRoute);
 
 
 // chat routes
