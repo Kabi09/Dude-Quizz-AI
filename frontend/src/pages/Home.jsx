@@ -9,6 +9,8 @@ export default function Home(){
   const nav = useNavigate();
 
   useEffect(()=> {
+    fetch(`${API_URL}/vist`).catch(() => {});
+    
     getClasses().then(data => setClasses(data)).catch(()=> {
       // fallback demo classes
       setClasses([{ classId: '10', name: 'Class 10' }, { classId: '11', name: 'Class 11' }, { classId: '12', name: 'Class 12' }]);

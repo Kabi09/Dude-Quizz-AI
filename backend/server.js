@@ -10,6 +10,9 @@ const chatRoutes=require("./routes/ChatRoutes");
 const { handleContactForm } = require('./routes/ContactRoute');
 const { handleSubscription } = require('./routes/subscribeRoutes');
 
+const trackRoute = require('./routes/track');
+
+
 
 const app = express();
 app.use(cors());
@@ -23,6 +26,8 @@ app.use('/api', questionsRouter);
 app.use('/api/ollama',ollamaRouter ); // mounts /api/ollama/*
 app.use("/api/contact",handleContactForm)
 app.use("/api/subscribe",handleSubscription)
+
+app.use('/api/vist', trackRoute);
 
 
 // chat routes
