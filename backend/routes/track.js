@@ -17,15 +17,17 @@ router.get('/', async (req, res) => {
     const ip = getClientIp(req);
     const userAgent = req.headers["user-agent"] || "unknown";
 
-    await Visitor.findOneAndUpdate(
-      { ip },{userAgent},
-      {
-        $inc: { count: 1 },
-        $set: { lastSeen: new Date() },
-        $setOnInsert: { firstSeen: new Date() }
-      },
-      { upsert: true, new: true }
-    );
+   // ✅ CORRECT: All updates in 2nd argument, Options in 3rd
+await Visitor.findOneAndUpdate(
+  { ip }, // 1. Filter
+  {       // 2. Update (Merge everything here)
+    userAgent, 
+    $inc: { count: 1 },
+    $set: { lastSeen: new Date() },
+    $setOnInsert: { firstSeen: new Date() }
+  },
+  { upsert: true, new: true } // 3. Options
+);
 
     // return minimal response
     return res.json({ ok: true });
