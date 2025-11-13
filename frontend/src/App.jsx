@@ -23,6 +23,8 @@ import Footer from './components/Footer';
 
 import ScrollToTop from './utils/ScrollToTop';
 
+import NotFoundPage from './pages/NotFoundPage';
+
 
 export default function App() {
 
