@@ -10,7 +10,7 @@ export default function Home(){
   const nav = useNavigate();
 
   useEffect(()=> {
-    fetch(`${API_URL}/vist`).catch(() => {});
+    fetch(`${API_URL}/visit`).catch(() => {});
 
     getClasses().then(data => setClasses(data)).catch(()=> {
       // fallback demo classes
