@@ -1214,3 +1214,23 @@ body.dark-mode .draggable-answer.used {
     max-width: 100%;
   }
 }
+
+
+/* This is the fix for the empty space on the right side on mobile.
+  Add this to your main CSS file (like index.css or App.css).
+*/
+
+.app-root {
+  /* This rule clips any content that goes beyond the screen's width */
+  overflow-x: hidden;
+  
+  /* This ensures the container itself doesn't try to be wider than the screen */
+  width: 100%;
+}
+
+/* It's also a good idea to apply this to the #root element 
+  to be safe.
+*/
+#root {
+  overflow-x: hidden;
+}
