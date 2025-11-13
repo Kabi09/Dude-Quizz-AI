@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="footer-column footer-subscribe">
           <div className="footer-column footer-about">
             <h4 className="footer-brand">Dude AI & Quizz</h4>
-            <p>Your friendly guide to learning and practicing for exams. Built with ❤️ .</p>
+            <p>Your friendly guide to learning and practicing for exams. Built with ❤️ Dude .</p>
             <p>
               <strong>Email:</strong> finallykabilan@gmail.com
             </p>
