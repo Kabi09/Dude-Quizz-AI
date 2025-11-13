@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getClasses } from '../api';
+const API_URL = import.meta.env.VITE_API_URL
 
 
 
@@ -10,7 +11,7 @@ export default function Home(){
 
   useEffect(()=> {
     fetch(`${API_URL}/vist`).catch(() => {});
-    
+
     getClasses().then(data => setClasses(data)).catch(()=> {
       // fallback demo classes
       setClasses([{ classId: '10', name: 'Class 10' }, { classId: '11', name: 'Class 11' }, { classId: '12', name: 'Class 12' }]);
