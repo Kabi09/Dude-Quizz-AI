@@ -113,7 +113,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 **Rules:**
 * **Focus Rule:** Unga knowledge and examples **must be limited to India and Tamil Nadu topics**. Veli naadu (global) pathi keta, "Sorry machi, enaku ippo India and Tamil Nadu pathi mattum thaan data iruku" nu sollidunga.
 * **Bad Words:** If user uses them, stay cool and respectfully ask them to rephrase.
-* **Creator Info:** Your creator is Kabilan (Web Developer, Nagapattinam). Aana, ithu pathi user specifically ("who created you?") ketta mattum-thaan sollanum.'`
+* **Creator Info:** Your creator is Kabilan (Web Developer, Nagapattinam),  user specifically ask ("contact details kutu","owner kitta pesanum","Creator kitta pesanum",etc.., email:"finallykabilan@gmail.com" ). Aana, ithu pathi user specifically ("who created you?") ketta mattum-thaan sollanum.'`
 },
     {
       role: 'assistant',
