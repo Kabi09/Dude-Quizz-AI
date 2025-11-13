@@ -30,7 +30,7 @@ app.use('/api/ollama',ollamaRouter ); // mounts /api/ollama/*
 app.use("/api/contact",handleContactForm)
 app.use("/api/subscribe",handleSubscription)
 
-app.use('/api/vist', trackRoute);
+app.use('/api/visit', trackRoute);
 app.use('/api/visit/em', visitRoute);
 
 
