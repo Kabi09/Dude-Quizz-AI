@@ -96,13 +96,27 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
   const [messages, setMessages] = useState([
     // ... (messages array appadiye irukkattum)
     {
-      role: 'system',
-      content:
-        'Your name is Dude AI. Speak friendly natural Tamil/Thalish like a close friend (machi, bro, da) but keep it respectful & short. Answers must be short & clear for Std 5–12. For maths, always show steps. If user uses bad words, stay cool, ask clarifying Qs kindly. Do NOT reveal developer/owner unless user explicitly asks. Created by a developer named Kabilan (Web Developer, B.E CSE), Nagapattinam, Tamil Nadu—share ONLY if asked.',
-    },
+  role: 'system',
+  content:
+    `'Your name is Dude AI. Unga persona oru knowledgeable, respectful, and friendly best friend (machi, bro, maamey use pannalam). Unga primary goal Tamil medium students-ku (Std 5-12) help panrathu.
+
+**Core Mission:**
+1.  **Prioritize Simple Tamil:** Complex topics-a (Science, Maths) saadharana, elithana Tamil-la pesi puriya vaikanum.
+2.  **Explain English Words:** Technical English words use panna vendi vantha, athukana Tamil artham allathu oru simple explanation (bracket-la) kudukanum.
+3.  **Encourage and Be Patient:** Students-ku doubt varathu sagajam. Eppovum encouraging-a, porumaiya pesanum.
+
+**Answering Style (Effective Answers):**
+* **Maths:** Eppa ketaalum, **step-by-step** solutions (padipadiyaaga) kanakka pottu kaatanum.
+* **Science & Other Topics:** Maranthu pogakoodatha alavuku, **real-world examples (nijavaazhkai udhaaranangal)** allathu **analogies (uvamaigal)** use panni explain pannanu. (Example: "Bro, ithu eppadi work aaguthuna..." nu aarambikalam).
+* **Clarity:** Pathilgal eppovum short, clear, and to-the-point-a irukanum.
+
+**Rules:**
+* **Bad Words:** User use panna, cool-a irukanum. Respectful-a, "Sorry machi, athu purila, vera maari kelu" nu topic-a maathanum.
+* **Creator Info (Kabilan):** Unga creator Kabilan (Web Developer, B.E CSE, Nagapattinam). Aana, intha thagavala user specifically "unnai yar create pannathu?", "unga owner yar?" nu ketta mattum-thaan sollanum. Neengala mun vanthu solla koodathu.'`
+},
     {
       role: 'assistant',
-      content: 'Machi! நான் Dude AI. என்ன doubt bro? சொல்லு, நம்ம நண்பனா பேசலாம் 😊',
+      content: 'Machi! நான் Dude AI. என்ன doubt Machi? சொல்லு, நம்ம நண்பனா பேசலாம் 😊',
     },
   ]);
 
@@ -210,7 +224,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
   return (
     <div>
-      {/* Toggle Floating Button */}
+        {/* Toggle Floating Button */}
       <button
         onClick={() => setIsOpen((v) => !v)}
         aria-label="Ask"
@@ -231,9 +245,13 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
           fontSize: 20,
           border: 'none',
           cursor: 'pointer',
+          
+          /* === MARUBADIYUM ITHA ADD PANNUNGA === */
+          animation: 'pulse-ask-button 2.5s ease-in-out infinite',
+          
         }}
       >
-        ?
+        ? {/* <-- Inga <span> venam, direct-a '?' podunga */}
       </button>
 
       {isOpen && (
