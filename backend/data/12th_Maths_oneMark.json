@@ -1,0 +1,4883 @@
+[
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "$|adj(A)| = |A|^9$ எனில், சதுர அணி A-யின் வரிசையானது",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "2",
+        "D": "5"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "A என்ற $3 \\times 3$ பூச்சியமற்றக் கோவை அணிக்கு $AA^T = A^T A$ மற்றும் $B = A^{-1} A^T$ என்றவாறு இருப்பின், $BB^T = $",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "$I_3$",
+        "D": "$B^T$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 3 & 5 \\\\ 1 & 2 \\end{bmatrix}$, $B = adj A$ மற்றும் $C = 3A$ எனில், $\\frac{|adj B|}{|C|} = $",
+      "options": {
+        "A": "$\\frac{1}{3}$",
+        "B": "$\\frac{1}{9}$",
+        "C": "$\\frac{1}{4}$",
+        "D": "1"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "$A \\begin{bmatrix} 1 & -2 \\\\ 1 & 4 \\end{bmatrix} = \\begin{bmatrix} 6 & 0 \\\\ 0 & 6 \\end{bmatrix}$ எனில், A = ",
+      "options": {
+        "A": "$\\begin{bmatrix} 1 & -2 \\\\ 1 & 4 \\end{bmatrix}$",
+        "B": "$\\begin{bmatrix} 1 & 2 \\\\ -1 & 4 \\end{bmatrix}$",
+        "C": "$\\begin{bmatrix} 4 & 2 \\\\ -1 & 1 \\end{bmatrix}$",
+        "D": "$\\begin{bmatrix} 4 & -1 \\\\ 2 & 1 \\end{bmatrix}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 7 & 3 \\\\ 4 & 2 \\end{bmatrix}$ எனில், $9I_2 - A = $",
+      "options": {
+        "A": "$A^{-1}$",
+        "B": "$\\frac{A^{-1}}{2}$",
+        "C": "$3A^{-1}$",
+        "D": "$2A^{-1}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 2 & 0 \\\\ 1 & 5 \\end{bmatrix}$ மற்றும் $B = \\begin{bmatrix} 1 & 4 \\\\ 2 & 0 \\end{bmatrix}$ எனில், $|adj(AB)| = $",
+      "options": {
+        "A": "-40",
+        "B": "-80",
+        "C": "-60",
+        "D": "-20"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$P = \\begin{bmatrix} 1 & x & 0 \\\\ 1 & 3 & 0 \\\\ 2 & 4 & -2 \\end{bmatrix}$ என்பது $3 \\times 3$ வரிசையுடைய அணி A-ன் சேர்ப்பு அணி மற்றும் $|A| = 4$ எனில், x-ன் மதிப்பானது",
+      "options": {
+        "A": "15",
+        "B": "12",
+        "C": "14",
+        "D": "11"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 3 & 1 & -1 \\\\ 2 & -2 & 0 \\\\ 1 & 2 & -1 \\end{bmatrix}$ மற்றும் $A^{-1} = \\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{bmatrix}$ எனில், $a_{23}$-ன் மதிப்பானது",
+      "options": {
+        "A": "0",
+        "B": "-2",
+        "C": "-3",
+        "D": "-1"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "A, B மற்றும் C என்பன நேர்மாறு காணத்தக்கவாறு ஏதேனுமொரு வரிசையில் இருப்பின் பின்வருவனவற்றில் எது உண்மையல்ல?",
+      "options": {
+        "A": "$adj A = |A| A^{-1}$",
+        "B": "$adj(AB) = (adj A)(adj B)$",
+        "C": "$\\det A^{-1} = (\\det A)^{-1}$",
+        "D": "$(ABC)^{-1} = C^{-1} B^{-1} A^{-1}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$(AB)^{-1} = \\begin{bmatrix} 12 & -17 \\\\ -19 & 27 \\end{bmatrix}$ மற்றும் $A^{-1} = \\begin{bmatrix} 1 & -1 \\\\ -2 & 3 \\end{bmatrix}$ எனில், $B^{-1} = $",
+      "options": {
+        "A": "$\\begin{bmatrix} 2 & -5 \\\\ -3 & 8 \\end{bmatrix}$",
+        "B": "$\\begin{bmatrix} 8 & 5 \\\\ 3 & 2 \\end{bmatrix}$",
+        "C": "$\\begin{bmatrix} 3 & 1 \\\\ 2 & 1 \\end{bmatrix}$",
+        "D": "$\\begin{bmatrix} 8 & -5 \\\\ -3 & 2 \\end{bmatrix}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$A^T A^{-1}$ ஆனது சமச்சீர் எனில், $A^2 = $",
+      "options": {
+        "A": "$A^{-1}$",
+        "B": "$(A^T)^2$",
+        "C": "$A^T$",
+        "D": "$(A^{-1})^2$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "A என்பது பூச்சியமற்றக் கோவை அணி மற்றும் $A^{-1} = \\begin{bmatrix} 5 & 3 \\\\ -2 & -1 \\end{bmatrix}$ எனில், $(A^T)^{-1} = $",
+      "options": {
+        "A": "$\\begin{bmatrix} -5 & 3 \\\\ 2 & 1 \\end{bmatrix}$",
+        "B": "$\\begin{bmatrix} 5 & 3 \\\\ -2 & -1 \\end{bmatrix}$",
+        "C": "$\\begin{bmatrix} -1 & -3 \\\\ 2 & 5 \\end{bmatrix}$",
+        "D": "$\\begin{bmatrix} 5 & -2 \\\\ 3 & -1 \\end{bmatrix}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$A = \\begin{bmatrix} \\frac{3}{5} & \\frac{4}{5} \\\\ x & \\frac{3}{5} \\end{bmatrix}$ மற்றும் $A^T = A^{-1}$ எனில், x-ன் மதிப்பு",
+      "options": {
+        "A": "$-\\frac{4}{5}$",
+        "B": "$-\\frac{3}{5}$",
+        "C": "$\\frac{3}{5}$",
+        "D": "$\\frac{4}{5}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 1 & \\tan\\frac{\\theta}{2} \\\\ -\\tan\\frac{\\theta}{2} & 1 \\end{bmatrix}$ மற்றும் $AB = I_2$ எனில், $B = $",
+      "options": {
+        "A": "$(\\cos^2 \\frac{\\theta}{2}) A$",
+        "B": "$(\\cos^2 \\frac{\\theta}{2}) A^T$",
+        "C": "$(\\cos^2 \\theta) I$",
+        "D": "$(\\sin^2 \\frac{\\theta}{2}) A$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$A = \\begin{bmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{bmatrix}$ மற்றும் $A(adj A) = \\begin{bmatrix} k & 0 \\\\ 0 & k \\end{bmatrix}$ எனில், $k = $",
+      "options": {
+        "A": "0",
+        "B": "$\\sin\\theta$",
+        "C": "$\\cos\\theta$",
+        "D": "1"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 2 & 3 \\\\ 5 & -2 \\end{bmatrix}$ மற்றும் $\\lambda A^{-1} = A$ எனில், $\\lambda$-ன் மதிப்பு",
+      "options": {
+        "A": "17",
+        "B": "14",
+        "C": "19",
+        "D": "21"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "$adj A = \\begin{bmatrix} 2 & 3 \\\\ 4 & -1 \\end{bmatrix}$ மற்றும் $adj B = \\begin{bmatrix} 1 & -2 \\\\ -3 & 1 \\end{bmatrix}$ எனில், $adj(AB)$ ஆனது",
+      "options": {
+        "A": "$\\begin{bmatrix} -7 & -1 \\\\ 7 & -9 \\end{bmatrix}$",
+        "B": "$\\begin{bmatrix} -6 & 5 \\\\ -2 & -10 \\end{bmatrix}$",
+        "C": "$\\begin{bmatrix} -7 & 7 \\\\ -1 & -9 \\end{bmatrix}$",
+        "D": "$\\begin{bmatrix} -6 & -2 \\\\ 5 & -10 \\end{bmatrix}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 1 & 2 & 3 & 4 \\\\ 2 & 4 & 6 & 8 \\\\ -1 & -2 & -3 & -4 \\end{bmatrix}$-ன் அணித்தரம்",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "3"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "$x^a y^b = e^m, x^c y^d = e^n, \\Delta_1 = \\begin{vmatrix} m & b \\\\ n & d \\end{vmatrix}, \\Delta_2 = \\begin{vmatrix} a & m \\\\ c & n \\end{vmatrix}, \\Delta_3 = \\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}$ எனில், x மற்றும் y-ன் மதிப்புகள் முறையே,",
+      "options": {
+        "A": "$e^{(\\Delta_2 / \\Delta_1)}, e^{(\\Delta_3 / \\Delta_1)}$",
+        "B": "$\\log(\\Delta_1 / \\Delta_3), \\log(\\Delta_2 / \\Delta_3)$",
+        "C": "$\\log(\\Delta_2 / \\Delta_1), \\log(\\Delta_3 / \\Delta_1)$",
+        "D": "$e^{(\\Delta_1 / \\Delta_3)}, e^{(\\Delta_2 / \\Delta_3)}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "பின்வருபனவற்றுள் எவை/எவைகள் உண்மையானவை? \n (i) ஒரு சமச்சீர் அணியின் சேர்ப்பு அணி சமச்சீராக இருக்கும். \n (ii) ஒரு மூலைவிட்ட அணியின் சேர்ப்பு அணி மூலை விட்ட அணியாக இருக்கும். \n (iii) A என்பது n வரிசையுடைய ஒரு சதுர அணி மற்றும் $\\lambda$ என்பது ஒரு திசையிலி எனில் $adj(\\lambda A) = \\lambda^n adj(A)$. \n (iv) $A(adj A) = (adj A)A = |A|I$",
+      "options": {
+        "A": "(i) மட்டும்",
+        "B": "(ii) மற்றும் (iii)",
+        "C": "(iii) மற்றும் (iv)",
+        "D": "(i), (ii) மற்றும் (iv)"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 21,
+    "content": {
+      "question": "$\\rho(A) = \\rho([A|B])$ எனில், $AX=B$ என்ற நேரியச் சமன்பாடுகளின் தொகுப்பானது",
+      "options": {
+        "A": "ஒருங்கமைவுடையது மற்றும் ஒரே ஒரு தீர்வு பெற்றிருக்கும்",
+        "B": "ஒருங்கமைவுடையது",
+        "C": "ஒருங்கமைவுடையது மற்றும் எண்ணற்ற தீர்வுகள் பெற்றிருக்கும்",
+        "D": "ஒருங்கமைவற்றது"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 22,
+    "content": {
+      "question": "$0 \\le \\theta \\le \\pi$ மற்றும் $x + (\\sin\\theta)y - (\\cos\\theta)z = 0, (\\cos\\theta)x - y + z = 0, (\\sin\\theta)x + y - z = 0$ தொகுப்பானது வெளிப்படையற்றத் தீர்வு பெற்றிருப்பின், $\\theta$-ன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{2\\pi}{3}$",
+        "B": "$\\frac{3\\pi}{4}$",
+        "C": "$\\frac{5\\pi}{6}$",
+        "D": "$\\frac{\\pi}{4}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 23,
+    "content": {
+      "question": "ஒரு நேரியச் சமன்பாட்டுத் தொகுப்பின் விரிவுபடுத்தப்பட்ட அணியானது $\\begin{bmatrix} 1 & 2 & 7 & 3 \\\\ 0 & 1 & 4 & 6 \\\\ 0 & 0 & \\lambda-7 & \\mu+5 \\end{bmatrix}$ மற்றும் தொகுப்பானது எண்ணற்ற தீர்வுகள் பெற்றிருக்கும் எனில்,",
+      "options": {
+        "A": "$\\lambda = 7, \\mu \\ne -5$",
+        "B": "$\\lambda = -7, \\mu = 5$",
+        "C": "$\\lambda \\ne 7, \\mu \\ne -5$",
+        "D": "$\\lambda = 7, \\mu = -5$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 24,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 2 & -1 & 1 \\\\ -1 & 2 & -1 \\\\ 1 & -1 & 2 \\end{bmatrix}$ என்க. $4B = \\begin{bmatrix} 3 & 1 & -1 \\\\ 1 & 3 & x \\\\ -1 & 1 & 3 \\end{bmatrix}$. A-ன் நேர்மாறு B எனில், x-ன் மதிப்பு",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "3",
+        "D": "1"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "1",
+    "unit_name": "அணிகள் மற்றும் அணிக்கோவைகளின் பயன்பாடுகள்",
+    "section": "பயிற்சி 1.8",
+    "type": "MCQ",
+    "question_no": 25,
+    "content": {
+      "question": "$A = \\begin{bmatrix} 3 & -3 & 4 \\\\ 2 & -3 & 4 \\\\ 0 & -1 & 1 \\end{bmatrix}$ எனில் $adj(adj A)$-ன் மதிப்பு",
+      "options": {
+        "A": "$\\begin{bmatrix} 3 & -3 & 4 \\\\ 2 & -3 & 4 \\\\ 0 & -1 & 1 \\end{bmatrix}$",
+        "B": "$\\begin{bmatrix} 6 & -6 & 8 \\\\ 4 & -6 & 8 \\\\ 0 & -2 & 2 \\end{bmatrix}$",
+        "C": "$\\begin{bmatrix} -3 & 3 & -4 \\\\ -2 & 3 & -4 \\\\ 0 & 1 & -1 \\end{bmatrix}$",
+        "D": "$\\begin{bmatrix} 3 & -3 & 4 \\\\ 0 & -1 & 1 \\\\ 2 & -3 & 4 \\end{bmatrix}$"
+      },
+      "answer": "A"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "$i^{n}+i^{n+1}+i^{n+2}+i^{n+3}$",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "i"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "$\\sum_{i=1}^{13}(i^{n}+i^{n-1})$-ன் மதிப்பு",
+      "options": {
+        "A": "$1+i$",
+        "B": "i",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "$iz$, மற்றும் $z + iz$ என்ற கலப்பெண்கள் ஆர்கண்ட் தளத்தில் உருவாக்கும் முக்கோணத்தின் பரப்பளவு",
+      "options": {
+        "A": "$\\frac{1}{2}|z|^{2}$",
+        "B": "$|z|^{2}$",
+        "C": "$\\frac{3}{2}|z|^{2}$",
+        "D": "$2|z|^{2}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "ஒரு கலப்பெண்ணின் இணை கலப்பெண் $\\frac{1}{i-2}$ எனில், அந்த கலப்பெண்",
+      "options": {
+        "A": "$\\frac{1}{i+2}$",
+        "B": "$\\frac{-1}{i+2}$",
+        "C": "$\\frac{-1}{i-2}$",
+        "D": "$\\frac{1}{i-2}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$z=\\frac{(\\sqrt{3}+i)^{3}(3i+4)^{2}}{(8+6i)^{2}}$ எனில், $|z|$-ன் மதிப்பு",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$z$ எனும் பூஜ்ஜியமற்ற கலப்பெண்ணிற்கு $2i z^{2} = \\bar{z}$ எனில், $|z|$-ன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{2}$",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$|z-2+i| \\le 2$ எனில், $|z|$-ன் மீப்பெரு மதிப்பு",
+      "options": {
+        "A": "$\\sqrt{3}-2$",
+        "B": "$\\sqrt{3}+2$",
+        "C": "$\\sqrt{5}-2$",
+        "D": "$\\sqrt{5}+2$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$\\left|z - \\frac{3}{z}\\right| = 2$ எனில், $|z|$-ன் மீம்பெரு மதிப்பு",
+    "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "5"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "$|z|=1$ எனில் $\\frac{1+z}{1+\\bar{z}}$-ன் மதிப்பு",
+      "options": {
+        "A": "z",
+        "B": "$\\bar{z}$",
+        "C": "$\\frac{1}{z}$",
+        "D": "1"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$|z|-z=1+2i$ என்ற சமன்பாட்டின் தீர்வு",
+      "options": {
+        "A": "$\\frac{3}{2}-2i$",
+        "B": "$-\\frac{3}{2}+2i$",
+        "C": "$2-\\frac{3}{2}i$",
+        "D": "$2+\\frac{3}{2}i$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$|z_1|=1, |z_2|=2, |z_3|=3$ மற்றும் $|9z_1z_2 + 4z_1z_3 + z_2z_3| = 12$ எனில், $|z_1+z_2+z_3|$-ன் மதிப்பு",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$z$ என்ற கலப்பெண்ணானது $z \\in \\mathbb{C} \\setminus \\mathbb{R}$ ஆகவும் $z + \\frac{1}{z} \\in \\mathbb{R}$ எனவும் இருந்தால், $|z|$-ன் மதிப்பு",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$z_1, z_2$ மற்றும் $z_3$ என்ற கலப்பெண்கள் $z_1+z_2+z_3=0$ எனவும் $|z_1|=|z_2|=|z_3|=1$ எனவும் இருப்பின், $z_1^2+z_2^2+z_3^2$-ன் மதிப்பு",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$\\frac{z-1}{z+1}$ என்பது முழுவதும் கற்பனை எனில், $|z|$-ன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{2}$",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$z=x+iy$ என்ற கலப்பெண்ணிற்கு $|z+2|=|z-2|$ எனில், $z$-ன் நியமப்பாதை",
+      "options": {
+        "A": "மெய் அச்சு",
+        "B": "கற்பனை அச்சு",
+        "C": "நீள்வட்டம்",
+        "D": "வட்டம்"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "$\\frac{3}{-1+i}$ என்ற கலப்பெண்ணின் முதன்மை வீச்சு",
+      "options": {
+        "A": "$\\frac{-5\\pi}{6}$",
+        "B": "$\\frac{-2\\pi}{3}$",
+        "C": "$\\frac{-3\\pi}{4}$",
+        "D": "$\\frac{-\\pi}{2}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "$(\\sin 40^{\\circ} + i \\cos 40^{\\circ})^5$-ன் முதன்மை வீச்சு",
+      "options": {
+        "A": "$-110^{\\circ}$",
+        "B": "$-70^{\\circ}$",
+        "C": "$70^{\\circ}$",
+        "D": "$110^{\\circ}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$(1+i)(1+2i)(1+3i)...(1+ni) = x+iy$ எனில், $2 \\cdot 5 \\cdot 10 \\cdot ... \\cdot (1+n^2) = $",
+      "options": {
+        "A": "1",
+        "B": "i",
+        "C": "$x^2+y^2$",
+        "D": "$1+n^2$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "$\\omega \\ne 1$ என்பது ஒன்றின் முப்படி மூலம் மற்றும் $(1+\\omega)^7 = A+B\\omega$ எனில், (A,B) என்பது",
+      "options": {
+        "A": "(1,0)",
+        "B": "(-1,1)",
+        "C": "(0,1)",
+        "D": "(1,1)"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "$\\frac{(1+i\\sqrt{3})^2}{4i(1-i\\sqrt{3})}$ என்ற கலப்பெண்ணின் முதன்மை வீச்சு",
+      "options": {
+        "A": "$\\frac{2\\pi}{3}$",
+        "B": "$\\frac{\\pi}{6}$",
+        "C": "$\\frac{5\\pi}{6}$",
+        "D": "$\\frac{\\pi}{2}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 21,
+    "content": {
+      "question": "$x^2+x+1=0$ என்ற சமன்பாட்டின் மூலங்கள் $\\alpha$ மற்றும் $\\beta$ எனில், $\\alpha^{2020}+\\beta^{2020}$-ன் மதிப்பு",
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "1",
+        "D": "2"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 22,
+    "content": {
+      "question": "$(\\cos\\frac{\\pi}{3} + i \\sin\\frac{\\pi}{3})^{3/4}$-ன் எல்லா நான்கு மதிப்புகளின் பெருக்குத் தொகை",
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "1",
+        "D": "2"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 23,
+    "content": {
+      "question": "$\\omega \\ne 1$ என்பது ஒன்றின் முப்படி மூலம் மற்றும் $\\begin{vmatrix} 1 & 1 & 1 \\\\ 1 & -\\omega^2-1 & \\omega^2 \\\\ 1 & \\omega^2 & \\omega^7 \\end{vmatrix} = 3k$ எனில், k-ன் மதிப்பு",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "$\\sqrt{3}i$",
+        "D": "$-\\sqrt{3}i$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 24,
+    "content": {
+      "question": "$(\\frac{1+\\sqrt{3}i}{1-\\sqrt{3}i})^{10}$-ன் மதிப்பு",
+      "options": {
+        "A": "$cis \\frac{2\\pi}{3}$",
+        "B": "$cis \\frac{4\\pi}{3}$",
+        "C": "$-cis \\frac{2\\pi}{3}$",
+        "D": "$-cis \\frac{4\\pi}{3}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "2",
+    "unit_name": "கலப்பெண்கள்",
+    "section": "பயிற்சி 2.9",
+    "type": "MCQ",
+    "question_no": 25,
+    "content": {
+      "question": "$\\omega = cis \\frac{2\\pi}{3}$ எனில் $\\begin{vmatrix} z+1 & \\omega & \\omega^2 \\\\ \\omega & z+\\omega^2 & 1 \\\\ \\omega^2 & 1 & z+\\omega \\end{vmatrix} = 0$ என்ற சமன்பாட்டின் வெவ்வேறான மூலங்களின் எண்ணிக்கை.",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "A"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "$x^3 + 64$-ன் ஒரு பூச்சியமாக்கி",
+      "options": {
+        "A": "0",
+        "B": "4",
+        "C": "4i",
+        "D": "-4"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "f மற்றும் g என்பன முறையே m மற்றும் n படியுள்ள பல்லுறுப்புக்கோவைகள் மற்றும் $h(x) = (f \\circ g)(x)$ எனில், h-ன் படியானது",
+      "options": {
+        "A": "mn",
+        "B": "m+n",
+        "C": "$m^n$",
+        "D": "$n^m$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "x-ல் n படியுள்ள ஒரு பல்லுறுப்புக்கோவைச் சமன்பாடு பெற்றுள்ள மூலங்கள்",
+      "options": {
+        "A": "n வெவ்வேறு மூலங்கள்",
+        "B": "n மெய்யெண் மூலங்கள்",
+        "C": "n கலப்பெண் மூலங்கள்",
+        "D": "அதிகபட்சம் ஒரு மூலம்"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "$x^3 + px^2 + qx + r$-க்கு $\\alpha, \\beta$ மற்றும் $\\gamma$ என்பவை பூச்சியமாக்கிகள் எனில் $\\sum \\frac{1}{\\alpha}$-ன் மதிப்பு",
+      "options": {
+        "A": "$-\\frac{q}{r}$",
+        "B": "$-\\frac{p}{r}$",
+        "C": "$\\frac{q}{r}$",
+        "D": "$-\\frac{q}{p}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "விகிதமுறு மூலத் தேற்றத்தின்படி பின்வருவனவற்றுள் எந்த எண் $4x^7 + 2x^4 - 10x^3 - 5$ என்பதற்கு சாத்தியமற்ற விகிதமுறு பூச்சியமாகும்?",
+      "options": {
+        "A": "-1",
+        "B": "$\\frac{5}{4}$",
+        "C": "$\\frac{4}{5}$",
+        "D": "5"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$x^3 - kx^2 + 9x$ எனும் பல்லுறுப்புக்கோவைக்கு மூன்று மெய்யெண் பூச்சியமாக்கிகள் இருப்பதற்கு தேவையானதும் மற்றும் போதுமானதுமான நிபந்தனை",
+      "options": {
+        "A": "$|k| \\le 6$",
+        "B": "$k = 0$",
+        "C": "$|k| > 6$",
+        "D": "$|k| \\ge 6$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$[0, 2\\pi]$-ல் $\\sin^4 x - 2 \\sin^2 x + 1$-ஐ நிறைவு செய்யும் மெய்யெண்களின் எண்ணிக்கை",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "1",
+        "D": "$\\infty$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$x^3 + 12x^2 + 10ax + 1999$-க்கு நிச்சயமாக ஒரு மிகையெண் பூச்சியமாக்கி இருப்பதற்கு தேவையானதும் மற்றும் போதுமானதுமான நிபந்தனை",
+      "options": {
+        "A": "$a \\ge 0$",
+        "B": "$a > 0$",
+        "C": "$a < 0$",
+        "D": "$a \\le 0$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "$x^3 + 2x + 3$ எனும் பல்லுறுப்புக்கோவைக்கு",
+      "options": {
+        "A": "ஒரு குறை மற்றும் இரு மெய்யற்ற கலப்பெண் பூச்சியமாக்கிகள் இருக்கும்",
+        "B": "ஒரு மிகை மற்றும் இரு மெய்யற்ற கலப்பெண் பூச்சியமாக்கிகள் இருக்கும்",
+        "C": "மூன்று மெய்யெண் பூச்சியமாக்கிகள் இருக்கும்",
+        "D": "பூச்சியமாக்கிகள் இல்லை"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "3",
+    "unit_name": "சமன்பாட்டியல்",
+    "section": "பயிற்சி 3.7",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$\\sum_{r=0}^n {nC_r} (-1)^r x^r$ எனும் பல்லுறுப்புக்கோவையின் மிகையெண் பூச்சியமாக்கிகளின் எண்ணிக்கை",
+      "options": {
+        "A": "0",
+        "B": "n",
+        "C": "< n",
+        "D": "r"
+      },
+      "answer": "B"
+    }
+  },
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "$sin^{-1}(\\cos x), 0 \\le x \\le \\pi$-ன் மதிப்பு",
+      "options": {
+        "A": "$\\pi - x$",
+        "B": "$x - \\frac{\\pi}{2}$",
+        "C": "$\\frac{\\pi}{2} - x$",
+        "D": "$x - \\pi$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "$sin^{-1}x + sin^{-1}y = \\frac{2\\pi}{3}$; எனில் $\\cos^{-1}x + \\cos^{-1}y$ என்பதன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{2\\pi}{3}$",
+        "B": "$\\frac{\\pi}{3}$",
+        "C": "$\\frac{\\pi}{6}$",
+        "D": "$\\pi$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "$sin^{-1}\\frac{3}{5} - \\cos^{-1}\\frac{12}{13} + \\sec^{-1}\\frac{5}{3} - \\cosec^{-1}\\frac{13}{12}$ என்பதன் மதிப்பு",
+      "options": {
+        "A": "$2\\pi$",
+        "B": "$\\pi$",
+        "C": "0",
+        "D": "$\\tan^{-1}\\frac{12}{65}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "If $sin^{-1}x = 2\\sin^{-1}a$-க்கு ஒரு தீர்வு இருந்தால், பின்னர்",
+      "options": {
+        "A": "$|a| \\le \\frac{1}{\\sqrt{2}}$",
+        "B": "$|a| \\ge \\frac{1}{\\sqrt{2}}$",
+        "C": "$|a| < \\frac{1}{\\sqrt{2}}$",
+        "D": "$|a| > \\frac{1}{\\sqrt{2}}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "பின்வருவனவற்றில் எம்மதிப்புகளுக்கு $sin^{-1}(\\cos x) = \\frac{\\pi}{2} - x$ என்பது மெய்யாகும்",
+      "options": {
+        "A": "$-\\pi \\le x \\le 0$",
+        "B": "$0 \\le x \\le \\pi$",
+        "C": "$-\\frac{\\pi}{2} \\le x \\le \\frac{\\pi}{2}$",
+        "D": "$-\\frac{\\pi}{4} \\le x \\le \\frac{3\\pi}{4}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$sin^{-1}x + sin^{-1}y + sin^{-1}z = \\frac{3\\pi}{2}$ எனில், $x^{2017} + y^{2018} + z^{2019} - \\frac{9}{x^{101} + y^{101} + z^{101}}$-ன் மதிப்பு",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$x \\in R$-க்கு $cot^{-1}x = \\frac{2\\pi}{5}$ எனில், $\\tan^{-1}x$-ன் மதிப்பு",
+      "options": {
+        "A": "$-\\frac{\\pi}{10}$",
+        "B": "$\\frac{\\pi}{5}$",
+        "C": "$\\frac{\\pi}{10}$",
+        "D": "$-\\frac{\\pi}{5}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$f(x) = sin^{-1}\\sqrt{x-1}$ என வரையறுக்கப்படும் சார்பின் சார்பகம்",
+      "options": {
+        "A": "[1, 2]",
+        "B": "[-1, 1]",
+        "C": "[0, 1]",
+        "D": "[-1, 0]"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "$x = \\frac{1}{5}$ எனில், $\\cos(\\cos^{-1}x + 2\\sin^{-1}x)$-ன் மதிப்பு",
+      "options": {
+        "A": "$-\\sqrt{\\frac{24}{25}}$",
+        "B": "$\\sqrt{\\frac{24}{25}}$",
+        "C": "$\\frac{1}{5}$",
+        "D": "$-\\frac{1}{5}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$\\tan^{-1}(\\frac{1}{4}) + \\tan^{-1}(\\frac{2}{9})$ என்பதின் சமம்",
+      "options": {
+        "A": "$\\frac{1}{2}\\cos^{-1}(\\frac{3}{5})$",
+        "B": "$\\frac{1}{2}\\sin^{-1}(\\frac{3}{5})$",
+        "C": "$\\frac{1}{2}\\tan^{-1}(\\frac{3}{5})$",
+        "D": "$\\tan^{-1}(\\frac{1}{2})$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$f(x) = \\sin^{-1}(x^2 - 3)$ எனில், x இருக்கும் இடைவெளி",
+      "options": {
+        "A": "[-1, 1]",
+        "B": "[$\\sqrt{2}, 2$]",
+        "C": "[-2, -$\\sqrt{2}$] $\\cup$ [$\\sqrt{2}, 2$]",
+        "D": "[-2, -$\\sqrt{2}$]"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$\\cot^{-1}2$ மற்றும் $\\cot^{-1}3$ ஆகியன ஒரு முக்கோணத்தின் இரு கோணங்கள் எனில், மூன்றாவது கோணமானது",
+      "options": {
+        "A": "$\\frac{\\pi}{4}$",
+        "B": "$\\frac{3\\pi}{4}$",
+        "C": "$\\frac{\\pi}{6}$",
+        "D": "$\\frac{\\pi}{3}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$\\sin^{-1}(\\tan\\frac{\\pi}{4}) - \\sin^{-1}(\\sqrt{\\frac{3}{x}}) = \\frac{\\pi}{6}$-ல் x என்பதை மூலமாக கொண்ட சமன்பாடு",
+      "options": {
+        "A": "$x^2 - x - 6 = 0$",
+        "B": "$x^2 - x - 12 = 0$",
+        "C": "$x^2 + x - 12 = 0$",
+        "D": "$x^2 + x - 6 = 0$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$\\sin^{-1}(2\\cos^2 x - 1) + \\cos^{-1}(1 - 2\\sin^2 x) = $",
+      "options": {
+        "A": "$\\frac{\\pi}{2}$",
+        "B": "$\\frac{\\pi}{3}$",
+        "C": "$\\frac{\\pi}{4}$",
+        "D": "$\\frac{\\pi}{6}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$\\cot^{-1}(\\sqrt{\\sin\\alpha}) + \\tan^{-1}(\\sqrt{\\sin\\alpha}) = u$ எனில், $\\cos 2u$ என்பதற்கு சமம்",
+      "options": {
+        "A": "$\\tan^2\\alpha$",
+        "B": "0",
+        "C": "-1",
+        "D": "$\\tan 2\\alpha$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "$|x| \\le 1$ எனில், $2\\tan^{-1}x - \\sin^{-1}\\frac{2x}{1+x^2}$ என்பதற்கு சமம்",
+      "options": {
+        "A": "$\\tan^{-1}x$",
+        "B": "$\\sin^{-1}x$",
+        "C": "0",
+        "D": "$\\pi$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "$\\tan^{-1}x - \\cot^{-1}x = \\tan^{-1}(\\frac{1}{\\sqrt{3}})$ என்ற சமன்பாட்டிற்கு",
+      "options": {
+        "A": "தீர்வு இல்லை",
+        "B": "ஒரேயொரு தீர்வு",
+        "C": "இரு தீர்வுகள்",
+        "D": "எண்ணற்றத் தீர்வுகள்"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$\\sin^{-1}x + \\cot^{-1}(\\frac{1}{2}) = \\frac{\\pi}{2}$ எனில், x-ன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{2}$",
+        "B": "$\\frac{1}{\\sqrt{5}}$",
+        "C": "$\\frac{2}{\\sqrt{5}}$",
+        "D": "$\\frac{\\sqrt{3}}{2}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "$\\sin^{-1}\\frac{x}{5} + \\cosec^{-1}\\frac{5}{4} = \\frac{\\pi}{2}$ எனில், x-ன் மதிப்பு",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "4",
+    "unit_name": "நேர்மாறு முக்கோணவியல் சார்புகள்",
+    "section": "பயிற்சி 4.6",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "$|x| < 1$ எனில், $\\sin(\\tan^{-1}x)$ என்பதின் சமம்",
+      "options": {
+        "A": "$\\frac{x}{\\sqrt{1-x^2}}$",
+        "B": "$\\frac{1}{\\sqrt{1-x^2}}$",
+        "C": "$\\frac{1}{\\sqrt{1+x^2}}$",
+        "D": "$\\frac{x}{\\sqrt{1+x^2}}$"
+      },
+      "answer": "D"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "(1, 5) மற்றும் (4, 1) என்ற புள்ளிகள் வழிச் செல்வதும் y-அச்சைத் தொட்டுச் செல்வதுமான வட்டச் சமன்பாடு $x^{2}+y^{2}-5x-6y+9+\\lambda(4x+3y-19)=0$ எனில் $\\lambda$-ன் மதிப்பு",
+      "options": {
+        "A": "0, $-\\frac{40}{9}$",
+        "B": "0",
+        "C": "$\\frac{40}{9}$",
+        "D": "$-\\frac{40}{9}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "செவ்வகல நீளம் 8 அலகுகள் மற்றும் துணையச்சின் நீளம் குவியங்களுக்கிடையே உள்ள தூரத்தில் பாதி உள்ள அதிபரவளையத்தின் மையத்தொலைத் தகவு",
+      "options": {
+        "A": "$\\frac{4}{3}$",
+        "B": "$\\frac{4}{\\sqrt{3}}$",
+        "C": "$\\frac{2}{\\sqrt{3}}$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "வட்டம் $x^{2}+y^{2}=4x+8y+5$ நேர்க்கோடு 3x-4y =m-ஐ இரு வெவ்வேறு புள்ளிகளில் வெட்டுகின்றது எனில்",
+      "options": {
+        "A": "$15<m<65$",
+        "B": "$35<m<85$",
+        "C": "$-85<m<-35$",
+        "D": "$-35<m<15$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "x-அச்சை (1,0) என்ற புள்ளியில் தொட்டுச் செல்வதும் (2,3) என்ற புள்ளிவழிச் செல்வதுமான வட்டத்தின் விட்டம்",
+      "options": {
+        "A": "$\\frac{6}{5}$",
+        "B": "$\\frac{5}{3}$",
+        "C": "$\\frac{10}{3}$",
+        "D": "$\\frac{3}{5}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$3x^{2}+by^{2}+4bx-6by+b^{2}=0$ என்ற வட்டத்தின் ஆரம்",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "$\\sqrt{10}$",
+        "D": "$\\sqrt{11}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$x^{2}-8x-12=0$ மற்றும் $y^{2}-14y+45=0$ என்ற கோடுகளால் அடைபடும் சதுரத்தின் உள்ளே வரையப்படும் மிகப்பெரிய வட்டத்தின் மையம்",
+      "options": {
+        "A": "(4,7)",
+        "B": "(7,4)",
+        "C": "(9,4)",
+        "D": "(4,9)"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "நேர்க்கோடு 2x + 4y =3-க்கு இணையாக $x^{2}+y^{2}-2x-2y+1=0$ என்ற வட்டத்தின் செங்கோட்டுச் சமன்பாடு",
+      "options": {
+        "A": "$x+2y=3$",
+        "B": "$x+2y+3=0$",
+        "C": "$2x+4y+3=0$",
+        "D": "$x-2y+3=0$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$P(x,y)$ என்ற புள்ளி குவியங்கள் $F_{1}(3,0)$ மற்றும் $F_{2}(-3,0)$ கொண்ட கூம்பு வளைவு $16x^{2}+25y^{2}=400$-ன் மீதுள்ள புள்ளி எனில் $PF_{1}+PF_{2}$-ன் மதிப்பு",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "10",
+        "D": "12"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "$x+y=6$ மற்றும் $x+2y=4$ என்ற நேர்க்கோடுகளை விட்டங்களாகக் கொண்டு(6,2) புள்ளிவழிச் செல்லும் வட்டத்தின் ஆரம்",
+      "options": {
+        "A": "10",
+        "B": "$2\\sqrt{5}$",
+        "C": "6",
+        "D": "4"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1$ மற்றும் $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=-1$ என்ற அதிபரவளையங்களின் குவியங்கள் ஒருநாற்கரத்தின் முனைகள் எனில் அந்த நாற்கரத்தின் பரப்பு",
+      "options": {
+        "A": "$4(a^{2}+b^{2})$",
+        "B": "$2(a^{2}+b^{2})$",
+        "C": "$a^{2}+b^{2}$",
+        "D": "$\\frac{1}{2}(a^{2}+b^{2})$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$y^{2}=4x$ என்ற பரவளையத்தின் செவ்வகல முனைகளில் வரையப்பட்ட செங்குத்துக் கோடுகள் $(x-3)^{2}+(y+2)^{2}=r^{2}$ என்ற வட்டத்தின் தொடுகோடுகள் எனில் $r^{2}$-ன் மதிப்பு",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1",
+        "D": "4"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$x+y=k$ என்ற நேர்க்கோடு பரவளையம் $y^{2}=12x$-க்கு செங்கோட்டுச் சமன்பாடாக உள்ளது எனில் k-ன் மதிப்பு",
+      "options": {
+        "A": "3",
+        "B": "-1",
+        "C": "1",
+        "D": "9"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "நீள்வட்டம் $E_{1}:\\frac{x^{2}}{9}+\\frac{y^{2}}{4}=1$ செவ்வகம் R-க்குள் செவ்வகத்தின் பக்கங்கள் நீள்வட்டத்தின் அச்சுகளுக்கு இணையாக இருக்குமாறு அமைந்துள்ளன. அந்த செவ்வகத்தின் சுற்றுவட்டமாக அமைந்த மற்றொரு நீள்வட்டம் $E_{2}$, (0,4) என்ற புள்ளி வழியாகச் செல்கிறது எனில் அந்த நீள்வட்டத்தின் மையத்தொலைத் தகவு",
+      "options": {
+        "A": "$\\frac{\\sqrt{2}}{2}$",
+        "B": "$\\frac{\\sqrt{3}}{2}$",
+        "C": "$\\frac{1}{2}$",
+        "D": "$\\frac{3}{4}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$2x-y=1$ என்ற கோட்டிற்கு இணையாக $\\frac{x^{2}}{9}-\\frac{y^{2}}{4}=1$ என்ற அதிபரவளையத்திற்கு தொடுகோடுகள் வரையப்பட்டால் தொடுபுள்ளிகளில் ஒன்று",
+      "options": {
+        "A": "$(\\frac{9}{2\\sqrt{2}},\\frac{-1}{\\sqrt{2}})$",
+        "B": "$(\\frac{-9}{2\\sqrt{2}},\\frac{1}{\\sqrt{2}})$",
+        "C": "$(\\frac{9}{2\\sqrt{2}},\\frac{1}{\\sqrt{2}})$",
+        "D": "$(3\\sqrt{3},-2\\sqrt{2})$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$\\frac{x^{2}}{16}+\\frac{y^{2}}{9}=1$ என்ற நீள்வட்டத்தின் குவியங்கள் வழியாகவும் (0,3) என்ற புள்ளியை மையமாகவும் கொண்ட நீள்வட்டத்தின் சமன்பாடு",
+      "options": {
+        "A": "$x^{2}+y^{2}-6y-7=0$",
+        "B": "$x^{2}+y^{2}-6y+7=0$",
+        "C": "$x^{2}+y^{2}-6y-5=0$",
+        "D": "$x^{2}+y^{2}-6y+5=0$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "C என்ற வட்டத்தின் மையம் (1,1) மற்றும் ஆரம் 1 அலகு என்க. T என்ற வட்டத்தின் மையம் (0,y) ஆகவும் ஆதிப்புள்ளி வழியாகவும் உள்ளது. மேலும் C என்றவட்டத்தை வெளிப்புறமாகத் தொட்டுச் செல்கிறது எனில் வட்டம் T-ன் ஆரம்",
+      "options": {
+        "A": "$\\frac{\\sqrt{3}}{\\sqrt{2}}$",
+        "B": "$\\frac{\\sqrt{3}}{2}$",
+        "C": "$\\frac{1}{2}$",
+        "D": "$\\frac{1}{4}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "மையம் ஆதிப்புள்ளியாகவும் நெட்டச்சு x-அச்சாகவும் உள்ள நீள்வட்டத்தைக் கருத்தில் கொள்க. அதன் மையத்தொலைத் தகவு $\\frac{3}{5}$ மற்றும் குவியங்களுக்கிடையே உள்ள தூரம் 6 எனில் அந்த நீள்வட்டத்தின் உள்ளே நெட்டச்சு மற்றும் குற்றச்சுகளை மூலைவிட்டங்களாக் கொண்டு வரையப்படும் நாற்கரத்தின் பரப்பு",
+      "options": {
+        "A": "8",
+        "B": "32",
+        "C": "80",
+        "D": "40"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1$ என்ற நீள்வட்டத்தினுள் வரையப்படும் மிகப் பெரிய செவ்வகத்தின் பரப்பு",
+      "options": {
+        "A": "2ab",
+        "B": "ab",
+        "C": "$\\sqrt{ab}$",
+        "D": "$\\frac{a}{b}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "நீள்வட்டத்தின் அரைக்குற்றச்சு OB. F மற்றும் F' குவியங்கள் மற்றும் $\\angle FBF^{\\prime}$ ஒரு செங்கோணம் எனில் அந்த நீள்வட்டத்தின் மையத்தொலைத் தகவு காண்க.",
+      "options": {
+        "A": "$\\frac{1}{\\sqrt{2}}$",
+        "B": "$\\frac{1}{2}$",
+        "C": "$\\frac{1}{4}$",
+        "D": "$\\frac{1}{\\sqrt{3}}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "$(x-3)^{2}+(y-4)^{2}=\\frac{y^{2}}{9}$ என்ற நீள்வட்டத்தின் மையத்தொலைத் தகவு",
+      "options": {
+        "A": "$\\frac{\\sqrt{3}}{2}$",
+        "B": "$\\frac{1}{3}$",
+        "C": "$\\frac{1}{3\\sqrt{2}}$",
+        "D": "$\\frac{1}{\\sqrt{3}}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 21,
+    "content": {
+      "question": "P என்ற புள்ளியிலிருந்து $y^{2}=4x$ என்ற பரவளையத்திற்கு வரையப்படும் இரு தொடுகோடுகளுக்கிடையேயான கோணம் செங்கோணம் எனில் P-ன் நியமப்பாதை",
+      "options": {
+        "A": "$2x+1=0$",
+        "B": "$x=-1$",
+        "C": "$2x-1=0$",
+        "D": "$x=1$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 22,
+    "content": {
+      "question": "(1,-2) என்ற புள்ளி வழியாகவும் (3,0) என்ற புள்ளியில் x அச்சைத் தொட்டுச் செல்வதுமான வட்டம் பின்வரும் புள்ளிகளில் எந்தப் புள்ளி வழியாகச் செல்லும்?",
+      "options": {
+        "A": "(-5,2)",
+        "B": "(2,-5)",
+        "C": "(5,-2)",
+        "D": "(-2,5)"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 23,
+    "content": {
+      "question": "(-2,0)-இலிருந்து ஒரு நகரும் புள்ளிக்கான தூரம் அந்தப் புள்ளிக்கும் நேர்க்கோடு $x=-\\frac{9}{2}$-க்கும் இடையேயான தூரத்தைப் போல் $\\frac{2}{3}$ மடங்கு உள்ளது எனில் அந்தப் புள்ளியின் நியமப்பாதை",
+      "options": {
+        "A": "பரவளையம்",
+        "B": "அதிபரவளையம்",
+        "C": "நீள்வட்டம்",
+        "D": "வட்டம்"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 24,
+    "content": {
+      "question": "$x^{2}-(a+b)x-4=0$ என்ற சமன்பாட்டின் மூலங்களின் மதிப்புகள் m-ன் மதிப்புகளாக இருக்கும்போது $y=mx+2\\sqrt{5}$ என்ற நேர்க்கோடு $16x^{2}-9y^{2}=144$ என்ற அதிபரவளையத்தைத் தொட்டுச் செல்கின்றது எனில் $(a+b)$-ன் மதிப்பு",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "0",
+        "D": "-2"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "5",
+    "unit_name": "இரு பரிமாண பகுமுறை வடிவியல்",
+    "section": "பயிற்சி 5.6",
+    "type": "MCQ",
+    "question_no": 25,
+    "content": {
+      "question": "$x^{2}+y^{2}-8x-4y+c=0$ என்ற வட்டத்தின் விட்டத்தின் ஒரு முனை (11,2) எனில் அதன் மறுமுனை",
+      "options": {
+        "A": "(-5,2)",
+        "B": "(-3,2)",
+        "C": "(5,-2)",
+        "D": "(-2,5)"
+      },
+      "answer": "B"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "$\\vec{a}$ மற்றும் $\\vec{b}$ என்பன இணை வெக்டர்கள் எனில், $[\\vec{a},\\vec{c},\\vec{b}]$-ன் மதிப்பு",
+      "options": {
+        "A": "2",
+        "B": "-1",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "$\\vec{\\beta}$ மற்றும் $\\vec{\\gamma}$ ஆகியவை அமைக்கும் தளத்தில் $\\vec{\\alpha}$ அமைந்துள்ளது எனில்,",
+      "options": {
+        "A": "$[\\vec{\\alpha},\\vec{\\beta},\\vec{\\gamma}]=1$",
+        "B": "$[\\vec{\\alpha},\\vec{\\beta},\\vec{\\gamma}]=-1$",
+        "C": "$[\\vec{\\alpha},\\vec{\\beta},\\vec{\\gamma}]=0$",
+        "D": "$[\\vec{\\alpha},\\vec{\\beta},\\vec{\\gamma}]=2$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "$\\vec{a}\\cdot\\vec{b} = \\vec{b}\\cdot\\vec{c} = \\vec{c}\\cdot\\vec{a} = 0$ எனில், $[\\vec{a},\\vec{b},\\vec{c}]$-ன் மதிப்பு",
+      "options": {
+        "A": "$|\\vec{a}| |\\vec{b}| |\\vec{c}|$",
+        "B": "$\\frac{1}{3}|\\vec{a}| |\\vec{b}| |\\vec{c}|$",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "$\\vec{b}$-க்கு செங்குத்தாகவும் $\\vec{c}$-க்கு இணையாகவும் உள்ள வெக்டர் $\\vec{a}$ என்றவாறுள்ள ஓரலகு வெக்டர்கள் $\\vec{a}, \\vec{b}, \\vec{c}$ எனில், $\\vec{a}\\times(\\vec{b}\\times\\vec{c})$-க்குச் சமமானது",
+      "options": {
+        "A": "$\\vec{a}$",
+        "B": "$\\vec{b}$",
+        "C": "$\\vec{c}$",
+        "D": "$\\vec{0}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$[\\vec{a},\\vec{b},\\vec{c}]=1$ எனில், $\\frac{\\vec{a}\\cdot(\\vec{b}\\times\\vec{c})}{(\\vec{c}\\times\\vec{a})\\cdot\\vec{b}} + \\frac{\\vec{b}\\cdot(\\vec{c}\\times\\vec{a})}{(\\vec{a}\\times\\vec{b})\\cdot\\vec{c}} + \\frac{\\vec{c}\\cdot(\\vec{a}\\times\\vec{b})}{(\\vec{c}\\times\\vec{b})\\cdot\\vec{a}}$-ன் மதிப்பு",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$\\hat{i}+\\hat{j}, \\hat{i}+2\\hat{j}, \\hat{i}+\\hat{j}+\\pi\\hat{k}$ என்ற வெக்டர்களை ஒரு புள்ளியில் சந்திக்கும் விளிம்புகளாகக் கொண்ட இணைகரத் திண்மத்தின் கன அளவு",
+      "options": {
+        "A": "$\\frac{\\pi}{2}$",
+        "B": "$\\frac{\\pi}{3}$",
+        "C": "$\\pi$",
+        "D": "$\\frac{\\pi}{4}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$\\vec{a}, \\vec{b}$ என்பன $[\\vec{a}, \\vec{b}, \\vec{a}\\times\\vec{b}] = \\frac{\\pi}{4}$ எனுமாறுள்ள ஓரலகு வெக்டர்கள் எனில், $\\vec{a}$ மற்றும் $\\vec{b}$ ஆகியவற்றுக்கு இடைப்பட்ட கோணம்",
+      "options": {
+        "A": "$\\frac{\\pi}{6}$",
+        "B": "$\\frac{\\pi}{4}$",
+        "C": "$\\frac{\\pi}{3}$",
+        "D": "$\\frac{\\pi}{2}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$\\vec{a}=\\hat{i}+\\hat{j}+\\hat{k}, \\vec{b}=\\hat{i}+\\hat{j}, \\vec{c}=\\hat{i}$ மற்றும் $(\\vec{a}\\times\\vec{b})\\times\\vec{c} = \\lambda\\vec{a} + \\mu\\vec{b}$ எனில், $\\lambda + \\mu$-ன் மதிப்பு",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "6",
+        "D": "3"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "$\\vec{a}, \\vec{b}, \\vec{c}$ என்பன $[\\vec{a}, \\vec{b}, \\vec{c}] = 3$ எனுமாறுள்ள ஒரு தளம் அமையா மூன்று பூச்சியமற்ற வெக்டர்கள் எனில், $\\{[\\vec{a}\\times\\vec{b}, \\vec{b}\\times\\vec{c}, \\vec{c}\\times\\vec{a}]\\}^2$-ன் மதிப்பு",
+      "options": {
+        "A": "81",
+        "B": "9",
+        "C": "27",
+        "D": "18"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$\\vec{a}, \\vec{b}, \\vec{c}$ என்பன $\\vec{a}\\times(\\vec{b}\\times\\vec{c}) = \\frac{\\vec{b}+\\vec{c}}{\\sqrt{2}}$ எனுமாறுள்ள ஒரு தளம் அமையா மூன்று ஓரலகு வெக்டர்கள் எனில், $\\vec{a}$ மற்றும் $\\vec{b}$ ஆகியவற்றுக்கு இடைப்பட்ட கோணம்",
+      "options": {
+        "A": "$\\frac{\\pi}{2}$",
+        "B": "$\\frac{3\\pi}{4}$",
+        "C": "$\\frac{\\pi}{4}$",
+        "D": "$\\pi$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$\\vec{a}\\times\\vec{b}, \\vec{b}\\times\\vec{c}, \\vec{c}\\times\\vec{a}$ ஆகியவற்றை ஒரு புள்ளியில் சந்திக்கும் விளிம்புகளாகக் கொண்ட இணைகரத் திண்மத்தின் கன அளவு 8 கன அலகுகள் எனில், $(\\vec{a}\\times\\vec{b})\\times(\\vec{b}\\times\\vec{c}), (\\vec{b}\\times\\vec{c})\\times(\\vec{c}\\times\\vec{a})$ மற்றும் $(\\vec{c}\\times\\vec{a})\\times(\\vec{a}\\times\\vec{b})$ ஆகியவற்றை ஒரு புள்ளியில் சந்திக்கும் விளிம்புகளாகக் கொண்ட இணைகரத் திண்மத்தின் கன அளவு",
+      "options": {
+        "A": "8 கன அலகுகள்",
+        "B": "512 கன அலகுகள்",
+        "C": "64 கன அலகுகள்",
+        "D": "24 கன அலகுகள்"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$\\vec{a}, \\vec{b}, \\vec{c}, \\vec{d}$ என்பன $(\\vec{a}\\times\\vec{b})\\times(\\vec{c}\\times\\vec{d}) = \\vec{0}$ எனுமாறுள்ள வெக்டர்கள் என்க. $\\vec{a}, \\vec{b}$ என்ற ஒரு ஜோடி வெக்டர்களாலும் மற்றும் $\\vec{c}, \\vec{d}$ என்ற ஒரு ஜோடி வெக்டர்களாலும் அமைக்கப்படும் தளங்கள் முறையே $P_1$ மற்றும் $P_2$ எனில், இத்தளங்களுக்கு இடைப்பட்ட கோணம்",
+      "options": {
+        "A": "$0^{\\circ}$",
+        "B": "$45^{\\circ}$",
+        "C": "$60^{\\circ}$",
+        "D": "$90^{\\circ}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$\\vec{a}, \\vec{b}, \\vec{c}$ என்பன $\\vec{b}\\cdot\\vec{c} \\ne 0$ மற்றும் $\\vec{a}\\cdot\\vec{b} \\ne 0$ எனுமாறுள்ள மூன்று வெக்டர்கள் என்க. $\\vec{a}\\times(\\vec{b}\\times\\vec{c}) = (\\vec{a}\\times\\vec{b})\\times\\vec{c}$ எனில், $\\vec{a}$ மற்றும் $\\vec{c}$ என்பவை",
+      "options": {
+        "A": "செங்குத்தானவை",
+        "B": "இணையானவை",
+        "C": "$\\frac{\\pi}{3}$ என்ற கோணத்தை தாங்குபவை",
+        "D": "$\\frac{\\pi}{6}$ என்ற கோணத்தை தாங்குபவை"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$\\vec{a}=2\\hat{i}+3\\hat{j}-\\hat{k}, \\vec{b}=\\hat{i}+2\\hat{j}-5\\hat{k}, \\vec{c}=3\\hat{i}+5\\hat{j}-\\hat{k}$ எனில், $\\vec{a}$-க்குச் செங்குத்தானதாகவும் $\\vec{b}$ மற்றும் $\\vec{c}$ என்ற வெக்டர்கள் உருவாக்கும் தளத்தில் அமைவதுமான வெக்டர்",
+      "options": {
+        "A": "$-17\\hat{i}+21\\hat{j}-97\\hat{k}$",
+        "B": "$17\\hat{i}+21\\hat{j}-123\\hat{k}$",
+        "C": "$-17\\hat{i}-21\\hat{j}+97\\hat{k}$",
+        "D": "$-17\\hat{i}-21\\hat{j}-97\\hat{k}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$\\frac{x-2}{3}=\\frac{y+1}{-2}, z=2$ மற்றும் $\\frac{x-1}{1}=\\frac{2y+3}{3}=\\frac{z+5}{2}$ என்ற கோடுகளுக்கு இடைப்பட்ட கோணம்",
+      "options": {
+        "A": "$\\frac{\\pi}{6}$",
+        "B": "$\\frac{\\pi}{4}$",
+        "C": "$\\frac{\\pi}{3}$",
+        "D": "$\\frac{\\pi}{2}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "$\\frac{x-2}{3}=\\frac{y-1}{-5}=\\frac{z+2}{2}$ என்ற கோடு $x+3y-\\alpha z+\\beta=0$ என்ற தளத்தின் மீது இருந்தால், பின்னர் $(\\alpha, \\beta)$ என்பது",
+      "options": {
+        "A": "(-5,5)",
+        "B": "(-6,7)",
+        "C": "(5,-5)",
+        "D": "(6,-7)"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "$\\vec{r}=(\\hat{i}+2\\hat{j}-3\\hat{k})+t(2\\hat{i}+\\hat{j}-2\\hat{k})$ என்ற கோட்டிற்கும் $\\vec{r}\\cdot(\\hat{i}+\\hat{j})+4=0$ என்ற தளத்திற்கும் இடைப்பட்ட கோணம்",
+      "options": {
+        "A": "$0^{\\circ}$",
+        "B": "$30^{\\circ}$",
+        "C": "$45^{\\circ}$",
+        "D": "$90^{\\circ}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$\\vec{r}=(6\\hat{i}-\\hat{j}-3\\hat{k})+t(-\\hat{i}+4\\hat{k})$ என்ற கோடு $\\vec{r}\\cdot(\\hat{i}+\\hat{j}-\\hat{k})=3$ என்ற தளத்தை சந்திக்கும் புள்ளியின் அச்சுத்தூரங்கள்",
+      "options": {
+        "A": "(2,1,0)",
+        "B": "(7,-1,-7)",
+        "C": "(1,2,-6)",
+        "D": "(5,-1,1)"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "ஆதிப்புள்ளியிலிருந்து $3x-6y+2z+7=0$ என்ற தளத்திற்கு உள்ள தொலைவு",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "$x+2y+3z+7=0$ மற்றும் $2x+4y+6z+7=0$ ஆகிய தளங்களுக்கு இடைப்பட்ட தொலைவு",
+      "options": {
+        "A": "$\\frac{\\sqrt{7}}{2\\sqrt{2}}$",
+        "B": "$\\frac{7}{2}$",
+        "C": "$\\frac{\\sqrt{7}}{2}$",
+        "D": "$\\frac{7}{2\\sqrt{2}}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 21,
+    "content": {
+      "question": "ஒரு கோட்டின் திசைக்கொசைன்கள் $\\frac{1}{c}, \\frac{1}{c}, \\frac{1}{c}$ எனில்,",
+      "options": {
+        "A": "$c = \\pm 3$",
+        "B": "$c = \\pm \\sqrt{3}$",
+        "C": "$c > 0$",
+        "D": "$0 < c < 1$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 22,
+    "content": {
+      "question": "$\\vec{r}=(\\hat{i}-2\\hat{j}-\\hat{k})+t(6\\hat{j}-\\hat{k})$ என்ற வெக்டர் சமன்பாடு குறிக்கும் நேர்க்கோட்டின் மீது உள்ள புள்ளிகள்",
+      "options": {
+        "A": "(0,6,-1) மற்றும் (1,-2,-1)",
+        "B": "(0,6,-1) மற்றும் (-1,-1,-2)",
+        "C": "(1,-2,-1) மற்றும் (1,4,-2)",
+        "D": "(1,-2,-1) மற்றும் (0,-6,1)"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 23,
+    "content": {
+      "question": "ஆதியிலிருந்து (1,1,1) என்ற புள்ளிக்கு உள்ள தொலைவானது $x+y+z+k=0$ என்ற தளத்திலிருந்து அப்புள்ளிக்கு உள்ள தொலைவில் பாதி எனில், k-ன் மதிப்புகள்",
+      "options": {
+        "A": "$\\pm 3$",
+        "B": "$\\pm 6$",
+        "C": "-3, 9",
+        "D": "3, -9"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 24,
+    "content": {
+      "question": "$\\vec{r}\\cdot(2\\hat{i}-\\lambda\\hat{j}+\\hat{k})=3$ மற்றும் $\\vec{r}\\cdot(4\\hat{i}+\\hat{j}-\\mu\\hat{k})=5$ ஆகிய தளங்கள் இணை எனில், $\\lambda$ மற்றும் $\\mu$-ன் மதிப்புகள்",
+      "options": {
+        "A": "$\\frac{1}{2}, -2$",
+        "B": "$-\\frac{1}{2}, 2$",
+        "C": "$-\\frac{1}{2}, -2$",
+        "D": "$\\frac{1}{2}, 2$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "6",
+    "unit_name": "வெக்டர் இயற்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 6.10",
+    "type": "MCQ",
+    "question_no": 25,
+    "content": {
+      "question": "ஆதியிலிருந்து $2x+3y+\\lambda z=1, \\lambda>0$ என்ற தளத்திற்கு வரையப்படும் செங்குத்தின் நீளம் $\\frac{1}{5}$ எனில், $\\lambda$-ன் மதிப்பு",
+      "options": {
+        "A": "$2\\sqrt{3}$",
+        "B": "$3\\sqrt{2}$",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "ஒரு கோளத்தின் கன அளவு வினாடிக்கு 3$\\pi$ செமீ³ வீதத்தில் அதிகரிக்கிறது. ஆரம் $\\frac{1}{2}$ செ.மீ ஆக இருக்கும்போது ஆரத்தின் மாறுபாட்டு வீதம்",
+      "options": {
+        "A": "3 செ.மீ/வி",
+        "B": "2 செ.மீ/வி",
+        "C": "1 செ.மீ/வி",
+        "D": "$\\frac{1}{2}$ செ.மீ/வி"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "ஒரு பலூனானது செங்குத்தாக மேல்நோக்கி 10 மீ/வி வீதத்தில் செல்கிறது. பலூன் செலுத்தப்பட்ட இடத்திலிருந்து 40 மீ தொலைவில் இருந்து ஒருவர் இதனைப் பார்க்கிறார். பலூனின் ஏற்றக் கோணத்தில் ஏற்படும் மாறுபாட்டு வீதத்தை பலூன் தரையிலிருந்து 30 மீட்டர் உயரத்தில் இருக்கும்போது காண்க.",
+      "options": {
+        "A": "$\\frac{3}{25}$ ரேடியன்கள்/வினாடி",
+        "B": "$\\frac{4}{25}$ ரேடியன்கள்/வினாடி",
+        "C": "$\\frac{1}{5}$ ரேடியன்கள்/வினாடி",
+        "D": "$\\frac{1}{3}$ ரேடியன்கள்/வினாடி"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "t என்ற காலத்தில் கிடைமட்டமாக நகரும் துகளின் நிலை $s(t) = 3t^2 - 2t - 8$ எனக் கொடுக்கப்பட்டுள்ளது. துகள் ஓய்வு நிலைக்கு வரும் நேரம்",
+      "options": {
+        "A": "t = 0",
+        "B": "$t = \\frac{1}{3}$",
+        "C": "t = 1",
+        "D": "t = 3"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "ஒரு கல்லானது செங்குத்தாக மேல்நோக்கி எறியப்படுகின்றது. t நேரத்தில் அது அடைந்த உயரம் $x = 80t - 16t^2$. கல் அதிகபட்ச உயரத்தை t வினாடி நேரத்தில் அடைந்தால் t ஆனது",
+      "options": {
+        "A": "2",
+        "B": "2.5",
+        "C": "3",
+        "D": "3.5"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$6y = x^3 + 2$ என்ற வளைவரையின் எப்புள்ளியில் y-ஆயத்தொலைவின் மாறுபாட்டு வீதம் x-ஆயத்தொலைவின் மாறுபாட்டு வீதத்தைப் போல் 8 மடங்கு இருக்கும்.",
+      "options": {
+        "A": "(4, 11)",
+        "B": "(4, -11)",
+        "C": "(-4, 11)",
+        "D": "(-4, -11)"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$f(x) = \\sqrt{8 - 2x}$ என்ற வளைவரையின் எந்த x-ஆயத்தொலைவில் வரையப்பட்ட தொடுகோட்டின் சாய்வு -0.25 இருக்கும்?",
+      "options": {
+        "A": "-8",
+        "B": "-4",
+        "C": "-2",
+        "D": "0"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$f(x) = 2\\cos 4x$ என்ற வளைவரைக்கு $x = \\frac{\\pi}{12}$-ல் செங்கோட்டின் சாய்வு",
+      "options": {
+        "A": "$-4\\sqrt{3}$",
+        "B": "-4",
+        "C": "$\\frac{\\sqrt{3}}{12}$",
+        "D": "$4\\sqrt{3}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$y^2 - xy + 9 = 0$ என்ற வளைவரையின் தொடுகோடு எப்போது நிலைகுத்தாக இருக்கும்?",
+      "options": {
+        "A": "y = 0",
+        "B": "$y = \\pm \\sqrt{3}$",
+        "C": "$y = \\frac{1}{2}$",
+        "D": "$y = \\pm 3$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "ஆதியில் $y^2 = x$ மற்றும் $x^2 = y$ என்ற வளைவரைகளுக்கு இடைப்பட்ட கோணம்",
+      "options": {
+        "A": "$tan^{-1} \\frac{3}{4}$",
+        "B": "$tan^{-1} (\\frac{4}{3})$",
+        "C": "$\\frac{\\pi}{2}$",
+        "D": "$\\frac{\\pi}{4}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$\\lim_{x\\to 0} (\\cot x - \\frac{1}{x})$-ன் மதிப்பு",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "$\\infty$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$\\sin^4 x + \\cos^4 x$ என்ற சார்பு இறங்கும் இடைவெளி",
+      "options": {
+        "A": "$[\\frac{5\\pi}{8}, \\frac{3\\pi}{4}]$",
+        "B": "$[\\frac{\\pi}{2}, \\frac{5\\pi}{8}]$",
+        "C": "$[\\frac{\\pi}{4}, \\frac{\\pi}{2}]$",
+        "D": "$[0, \\frac{\\pi}{4}]$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$x^3 - 3x^2, x \\in [0, 3]$ என்ற சார்பிற்கு ரோலின் தேற்றத்தை நிறைவு செய்யும் எண்",
+      "options": {
+        "A": "1",
+        "B": "$\\sqrt{2}$",
+        "C": "$\\frac{3}{2}$",
+        "D": "2"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$\\frac{1}{x}, x \\in [1, 9]$ என்ற சார்பிற்கு சராசரி மதிப்புத் தேற்றத்தை நிறைவு செய்யும் எண்",
+      "options": {
+        "A": "2",
+        "B": "2.5",
+        "C": "3",
+        "D": "3.5"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$|3 - x| + 9$ என்ற சார்பின் குறைந்த மதிப்பு",
+      "options": {
+        "A": "0",
+        "B": "3",
+        "C": "6",
+        "D": "9"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$y = e^x \\sin x, x \\in [0, 2\\pi]$ என்ற வளைவரையின் மீப்பெரு சாய்வு எங்கு அமையும்?",
+      "options": {
+        "A": "$x = \\frac{\\pi}{4}$",
+        "B": "$x = \\frac{\\pi}{2}$",
+        "C": "$x = \\pi$",
+        "D": "$x = \\frac{3\\pi}{2}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "$x^2 e^{-2x}, x > 0$ என்ற சார்பின் பெரும மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{e}$",
+        "B": "$\\frac{1}{2e}$",
+        "C": "$\\frac{1}{e^2}$",
+        "D": "$\\frac{4}{e^4}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "(6, 0) என்ற புள்ளிக்கும் $x^2 - y^2 = 4$ என்ற வளைவரை மீதுள்ள புள்ளிக்கும் உள்ள தொலைவு குறைந்தபட்சம் எனில் அப்புள்ளி",
+      "options": {
+        "A": "(2, 0)",
+        "B": "($\\sqrt{5}, 1$)",
+        "C": "(3, $\\sqrt{5}$)",
+        "D": "($\\sqrt{13}, -\\sqrt{3}$)"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "இரண்டு மிகை எண்களின் கூடுதல் 200 மேலும் அவற்றின் பெருக்கல் பலனின் பெரும மதிப்பு",
+      "options": {
+        "A": "100",
+        "B": "$25\\sqrt{7}$",
+        "C": "28",
+        "D": "$24\\sqrt{14}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "$y = ax^4 + bx^2, ab > 0$ வளைவரை",
+      "options": {
+        "A": "கிடைமட்டத் தொடுகோடு பெறவில்லை",
+        "B": "மேற்புறமாக குழிவு",
+        "C": "கீழ்ப்புறமாக குழிவு",
+        "D": "வளைவு மாற்றப் புள்ளியை பெறவில்லை"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "7",
+    "unit_name": "வகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 7.10",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "$y = (x - 1)^3$ என்ற வளைவரையின் வளைவு மாற்றப் புள்ளி",
+      "options": {
+        "A": "(0, 0)",
+        "B": "(0, 1)",
+        "C": "(1, 0)",
+        "D": "(1, 1)"
+      },
+      "answer": "C"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "ஒரு வட்ட வடிவ வார்ப்பின் ஆரம் 10 செமீ. ஆரத்தின் அளவில் தோராயமாக 0.02 செமீ பிழை உள்ளது எனில் அதன் பரப்பில் ஏற்படும் தோராய சதவீதப் பிழையைக் காண்க.",
+      "options": {
+        "A": "0.2%",
+        "B": "0.4%",
+        "C": "0.04%",
+        "D": "0.08%"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "31-ன் 5ஆம் படி மூல சதவீதப் பிழை தோராயமாக, 31-ன் சதவீதப் பிழையைப் போல் எத்தனை மடங்காகும்?",
+      "options": {
+        "A": "$\\frac{1}{31}$",
+        "B": "$\\frac{1}{5}$",
+        "C": "5",
+        "D": "31"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "$u(x,y)=e^{x^{2}+y^{2}}$ எனில் $\\frac{\\partial u}{\\partial x}$-ன் மதிப்பு",
+      "options": {
+        "A": "$e^{x^{2}+y^{2}}$",
+        "B": "2xu",
+        "C": "$x^{2}u$",
+        "D": "$y^{2}u$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "$v(x,y)=\\log(e^{x}+e^{y})$, எனில் $\\frac{\\partial v}{\\partial x}+\\frac{\\partial v}{\\partial y}$-ன் மதிப்பு",
+      "options": {
+        "A": "$e^{x}+e^{y}$",
+        "B": "$\\frac{1}{e^{x}+e^{y}}$",
+        "C": "2",
+        "D": "1"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$w(x,y)=x^{y}, x>0$, எனில் $\\frac{\\partial w}{\\partial y}$-ன் மதிப்பு",
+      "options": {
+        "A": "$x^{y} \\log x$",
+        "B": "$y \\log x$",
+        "C": "$yx^{y-1}$",
+        "D": "$x \\log y$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$f(x,y)=e^{xy},$ எனில் $\\frac{\\partial^{2}f}{\\partial x\\partial y}$-ன் மதிப்பு",
+      "options": {
+        "A": "$xye^{xy}$",
+        "B": "$(1+xy)e^{xy}$",
+        "C": "$(1+y)e^{xy}$",
+        "D": "$(1+x)e^{xy}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "ஒரு கன சதுரத்தின் பக்க அளவு 4 செமீ மற்றும் அதன் பிழை 0.1 செமீ எனில் கன அளவு கணக்கீட்டில் ஏற்படும் பிழை",
+      "options": {
+        "A": "0.4 கன செமீ",
+        "B": "0.45 கன செமீ",
+        "C": "2 கன செமீ",
+        "D": "4.8 கன செமீ"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "ஒரு கன சதுரத்தின் பக்க அளவு $x_0$-லிருந்து $x_0+dx$ ஆக மாறும்போது அதன் வளைபரப்பு $S=6x^2$ இல் ஏற்படும் மாற்றம்",
+      "options": {
+        "A": "$12x_0+dx$",
+        "B": "$12x_0 dx$",
+        "C": "$6x_0 dx$",
+        "D": "$6x_0+dx$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "ஒரு கன சதுரத்தின் பக்க அளவு 1% அதிகரிக்கும்போது அதன் கன அளவில் ஏற்படும் மாற்றம்",
+      "options": {
+        "A": "$0.3x^3 \\text{மீ}^3$",
+        "B": "$0.03x^3 \\text{மீ}^3$",
+        "C": "$0.03x^2 \\text{மீ}^3$",
+        "D": "$0.03x \\text{மீ}^3$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$g(x,y)=3x^{2}-5y+2y^{2}, x(t)=e^{t}, y(t)=\\cos t,$ எனில் $\\frac{dg}{dt}$-ன் மதிப்பு",
+      "options": {
+        "A": "$6e^{2t}+5\\sin t-4\\cos t\\sin t$",
+        "B": "$6e^{2t}-5\\sin t+4\\cos t\\sin t$",
+        "C": "$3e^{2t}+5\\sin t+4\\cos t\\sin t$",
+        "D": "$3e^{2t}-5\\sin t+4\\cos t\\sin t$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$f(x)=\\frac{x}{x+1},$ எனில் அதன் வகையீடு",
+      "options": {
+        "A": "$-\\frac{1}{(x+1)^{2}}dx$",
+        "B": "$\\frac{1}{(x+1)^{2}}dx$",
+        "C": "$\\frac{1}{x+1}dx$",
+        "D": "$-\\frac{1}{x+1}dx$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$u(x,y)=x^{2}+3xy+y-2019$, எனில் $\\frac{\\partial u}{\\partial x}|_{(4,-5)}$-ன் மதிப்பு",
+      "options": {
+        "A": "-4",
+        "B": "-3",
+        "C": "-7",
+        "D": "13"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$g(x)=\\cos x$-ன் நேரியல் தோராய மதிப்பு $x=\\frac{\\pi}{2}$ இல்",
+      "options": {
+        "A": "$x+\\frac{\\pi}{2}$",
+        "B": "$-x+\\frac{\\pi}{2}$",
+        "C": "$x-\\frac{\\pi}{2}$",
+        "D": "$-x-\\frac{\\pi}{2}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$w(x,y,z)=x^{2}(y-z)+y^{2}(z-x)+z^{2}(x-y)$ எனில் $\\frac{\\partial w}{\\partial x}+\\frac{\\partial w}{\\partial y}+\\frac{\\partial w}{\\partial z}$-ன் மதிப்பு",
+      "options": {
+        "A": "$xy+yz+zx$",
+        "B": "$x(y+z)$",
+        "C": "$y(z+x)$",
+        "D": "0"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "8",
+    "unit_name": "வகை நுண்கணிதம் மற்றும் பகுதி வகைக்கெழுக்கள்",
+    "section": "பயிற்சி 8.8",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$f(x,y,z)=xy+yz+zx$, எனில் $f_x - f_z$-ன் மதிப்பு",
+      "options": {
+        "A": "$z-x$",
+        "B": "$y-z$",
+        "C": "$x-z$",
+        "D": "$y-x$"
+      },
+      "answer": "A"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "$\\int_{0}^{2/3} \\frac{dx}{\\sqrt{4-9x^2}}$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{\\pi}{6}$",
+        "B": "$\\frac{\\pi}{2}$",
+        "C": "$\\frac{\\pi}{4}$",
+        "D": "$\\pi$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "$\\int_{-1}^{1} |x| dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{2}$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$\\frac{5}{2}$",
+        "D": "$\\frac{7}{2}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+     "question": "ஒவ்வொரு $n \\in \\mathbb{Z}$-க்கும் $\\int_{0}^{\\pi} e^{\\cos^2 x} \\cos^3[(2n+1)x] dx$ இன் மதிப்பு",
+     "options": {
+        "A": "$\\frac{\\pi}{2}$",
+        "B": "$\\pi$",
+        "C": "0",
+        "D": "2"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "$\\int_{-\\pi/2}^{\\pi/2} \\sin^2 x \\cos x dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$\\frac{1}{2}$",
+        "C": "0",
+        "D": "$\\frac{2}{3}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$\\int_{-4}^{4}[\\tan^{-1}(\\frac{x^{2}}{x^{4}+1})+\\tan^{-1}(\\frac{x^{4}+1}{x^{2}})]dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\pi$",
+        "B": "$2\\pi$",
+        "C": "$3\\pi$",
+        "D": "$4\\pi$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$\\int_{-\\pi/4}^{\\pi/4} (\\frac{2x^7-3x^5+7x^3-x+1}{\\cos^2 x}) dx$ இன் மதிப்பு",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "0"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$f(x)=\\int_{0}^{x} t \\cos t  dt$, எனில் $\\frac{df}{dx}=$",
+      "options": {
+        "A": "$\\cos x - x \\sin x$",
+        "B": "$\\sin x + x \\cos x$",
+        "C": "$x \\cos x$",
+        "D": "$x \\sin x$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$y^{2}=4x$ என்ற பரவளையத்திற்கும் அதன் செவ்வகலத்திற்கும் இடையே பரப்பானது",
+      "options": {
+        "A": "$\\frac{2}{3}$",
+        "B": "$\\frac{4}{3}$",
+        "C": "$\\frac{8}{3}$",
+        "D": "$\\frac{5}{3}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "$\\int_{0}^{1}x(1-x)^{99}dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{11000}$",
+        "B": "$\\frac{1}{10100}$",
+        "C": "$\\frac{1}{10010}$",
+        "D": "$\\frac{1}{10001}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$\\int_{0}^{\\pi} \\frac{dx}{1+5^{\\cos x}}$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{\\pi}{2}$",
+        "B": "$\\pi$",
+        "C": "$\\frac{3\\pi}{2}$",
+        "D": "$2\\pi$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$\\frac{\\Gamma(n+2)}{\\Gamma(n)}=90$ எனில் n இன் மதிப்பு",
+      "options": {
+        "A": "10",
+        "B": "5",
+        "C": "8",
+        "D": "9"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$\\int_{0}^{\\pi/6} \\cos^3 3x  dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{2}{3}$",
+        "B": "$\\frac{2}{9}$",
+        "C": "$\\frac{1}{9}$",
+        "D": "$\\frac{1}{3}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$\\int_{0}^{\\pi} \\sin^4 x  dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{3\\pi}{10}$",
+        "B": "$\\frac{3\\pi}{8}$",
+        "C": "$\\frac{3\\pi}{4}$",
+        "D": "$\\frac{3\\pi}{2}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$\\int_{0}^{\\infty}e^{-3x}x^{2}dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{7}{27}$",
+        "B": "$\\frac{5}{27}$",
+        "C": "$\\frac{4}{27}$",
+        "D": "$\\frac{2}{27}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$\\int_{0}^{a} \\frac{dx}{4+x^2}=\\frac{\\pi}{8}$ எனில் a இன் மதிப்பு",
+      "options": {
+        "A": "4",
+        "B": "1",
+        "C": "3",
+        "D": "2"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "$y^{2}=x(a-x)$ என்ற வளைவரையில் அடைபடும் அரங்கத்தின் பரப்பை x-அச்சைப் பொருத்து சுழற்றுவதால் உருவாகும் திடப்பொருளின் கன அளவு",
+      "options": {
+        "A": "$\\pi a^{3}$",
+        "B": "$\\frac{\\pi a^{3}}{4}$",
+        "C": "$\\frac{\\pi a^{3}}{5}$",
+        "D": "$\\frac{\\pi a^{3}}{6}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "$f(x) = \\int_{1}^{x} \\frac{e^{\\sin u}}{u} du, x>1$ மற்றும் $\\int_{1}^{3}\\frac{e^{\\sin x^{2}}}{x}dx=\\frac{1}{2}[f(a)-f(1)]$ எனில் a பெறக்கூடிய ஒரு மதிப்பு",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "5"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$\\int_{0}^{1} (\\sin^{-1} x)^2 dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{\\pi^{2}}{4}-1$",
+        "B": "$\\frac{\\pi^{2}}{4}+2$",
+        "C": "$\\frac{\\pi^{2}}{4}+1$",
+        "D": "$\\frac{\\pi^{2}}{4}-2$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "$\\int_{0}^{a}(\\sqrt{a^{2}-x^{2}})^{3}dx$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{\\pi a^{3}}{16}$",
+        "B": "$\\frac{3\\pi a^{4}}{16}$",
+        "C": "$\\frac{3\\pi a^{2}}{8}$",
+        "D": "$\\frac{3\\pi a^{4}}{8}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "9",
+    "unit_name": "தொகை நுண்கணிதத்தின் பயன்பாடுகள்",
+    "section": "பயிற்சி 9.10",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "$\\int_{0}^{x}f(t)dt=x+\\int_{x}^{1}t f(t)dt$ எனில் $f(1)$ இன் மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{2}$",
+        "B": "2",
+        "C": "1",
+        "D": "$\\frac{3}{4}$"
+      },
+      "answer": "A"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "$\\frac{d^{2}y}{dx^{2}}+(\\frac{dy}{dx})^{1/3}+x^{1/4}=0$ எனும் வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி முறையே",
+      "options": {
+        "A": "2, 3",
+        "B": "3, 3",
+        "C": "2, 6",
+        "D": "2, 4"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "$y=A \\cos(x+B)$, இங்கு A, B என்பன எதேச்சை மாறிலிகள் எனும் சமன்பாட்டைக் கொண்ட வளைவரை குடும்பத்தின் வகைக்கெழுச் சமன்பாடு",
+      "options": {
+        "A": "$\\frac{d^{2}y}{dx^{2}}-y=0$",
+        "B": "$\\frac{d^{2}y}{dx^{2}}+y=0$",
+        "C": "$\\frac{d^{2}y}{dx^{2}}=0$",
+        "D": "$\\frac{d^{2}x}{dy^{2}}=0$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "$\\sqrt{\\sin x}(dx+dy)=\\sqrt{\\cos x}(dx-dy)$ எனும் வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி",
+      "options": {
+        "A": "1, 2",
+        "B": "2, 2",
+        "C": "1, 1",
+        "D": "2, 1"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "மையம் $(h, k)$ மற்றும் ஆரம் ‘a’ கொண்ட எல்லா வட்டங்களின் வகைக்கெழுச் சமன்பாட்டின் வரிசை",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "1"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$y=Ae^{x}+Be^{-x}$, இங்கு A, B என்பன ஏதேனும் இரு மாறிலிகள், எனும் வளைவரைத் தொகுதியின் வகைக்கெழுச் சமன்பாடு",
+      "options": {
+        "A": "$\\frac{d^{2}y}{dx^{2}}-y=0$",
+        "B": "$\\frac{d^{2}y}{dx^{2}}+y=0$",
+        "C": "$\\frac{dy}{dx}+y=0$",
+        "D": "$\\frac{dy}{dx}-y=0$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$\\frac{dy}{dx}=\\frac{y}{x}$ எனும் வகைக்கெழுச் சமன்பாட்டின் பொதுத்தீர்வு",
+      "options": {
+        "A": "$xy = k$",
+        "B": "$y = k \\log x$",
+        "C": "$y = kx$",
+        "D": "$\\log y = kx$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$2x\\frac{dy}{dx}-y=3$ எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு குறிப்பிடுவது",
+      "options": {
+        "A": "நேர்க்கோடுகள்",
+        "B": "வட்டங்கள்",
+        "C": "பரவளையம்",
+        "D": "நீள்வட்டம்"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "$\\frac{dy}{dx}+p(x)y=0$-ன் தீர்வு",
+      "options": {
+        "A": "$y=ce^{\\int pdx}$",
+        "B": "$y=ce^{-\\int pdx}$",
+        "C": "$x=ce^{-\\int pdy}$",
+        "D": "$x=ce^{\\int pdy}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "$\\frac{dy}{dx}+y=\\frac{1+y}{x}$ என்ற வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி",
+      "options": {
+        "A": "$\\frac{x}{e^x}$",
+        "B": "$\\frac{e^x}{x}$",
+        "C": "$\\lambda e^x$",
+        "D": "$e^x$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "$\\frac{dy}{dx}+P(x)y=Q(x)$ என்ற வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி x எனில், $P(x)$ என்பது",
+      "options": {
+        "A": "$x$",
+        "B": "$\\frac{x^2}{2}$",
+        "C": "$\\frac{1}{x}$",
+        "D": "$\\frac{1}{x^2}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$y(x)=1+\\frac{dy}{dx}+\\frac{1}{1\\cdot2}(\\frac{dy}{dx})^{2}+\\frac{1}{1\\cdot2\\cdot3}(\\frac{dy}{dx})^{3}+....$ எனும் வகைக்கெழுச் சமன்பாட்டின் படி",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1",
+        "D": "4"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "p மற்றும் q என்பன முறையே $y\\frac{dy}{dx}+x^{3}(\\frac{d^{2}y}{dx^{2}})+xy=\\cos x$ எனும் வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி எனில்,",
+      "options": {
+        "A": "$p<q$",
+        "B": "$p=q$",
+        "C": "$p>q$",
+        "D": "இவற்றில் எதுவுமில்லை"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "$\\frac{dy}{dx}+\\frac{1}{\\sqrt{1-x^{2}}}=0$ எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு",
+      "options": {
+        "A": "$y+\\sin^{-1}x=c$",
+        "B": "$x+\\sin^{-1}y=0$",
+        "C": "$y^{2}+2 \\sin^{-1}x=C$",
+        "D": "$x^{2}+2 \\sin^{-1}y=0$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$\\frac{dy}{dx}=2xy$ எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு",
+      "options": {
+        "A": "$y=Ce^{x^{2}}$",
+        "B": "$y=2x^{2}+C$",
+        "C": "$y=Ce^{-x^{2}}+C$",
+        "D": "$y=x^{2}+C$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "$\\log(\\frac{dy}{dx})=x+y$ எனும் வகைக்கெழுச் சமன்பாட்டின் பொதுத்தீர்வு",
+      "options": {
+        "A": "$e^{x}+e^{y}=C$",
+        "B": "$e^{x}+e^{-y}=C$",
+        "C": "$e^{-x}+e^{y}=C$",
+        "D": "$e^{-x}+e^{-y}=C$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "$\\frac{dy}{dx}=2^{y-x}$-ன் தீர்வு",
+      "options": {
+        "A": "$2^{x}+2^{y}=C$",
+        "B": "$2^{x}-2^{y}=C$",
+        "C": "$\\frac{1}{2^{x}}-\\frac{1}{2^{y}}=C$",
+        "D": "$x+y=C$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "$\\frac{dy}{dx}=\\frac{y}{x}+\\frac{\\phi(\\frac{y}{x})}{\\phi'(\\frac{y}{x})}$ எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு",
+      "options": {
+        "A": "$x\\phi(\\frac{y}{x})=k$",
+        "B": "$\\phi(\\frac{y}{x})=kx$",
+        "C": "$y\\phi(\\frac{y}{x})=k$",
+        "D": "$\\phi(\\frac{y}{x})=ky$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$\\frac{dy}{dx}+Py=Q$ எனும் நேரியல் வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி $\\sin x$ எனில், P என்பது",
+      "options": {
+        "A": "$\\log \\sin x$",
+        "B": "$\\cos x$",
+        "C": "$\\tan x$",
+        "D": "$\\cot x$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "வரிசை n மற்றும் n +1 கொண்ட வகைக்கெழுச் சமன்பாடுகளின் பொதுத் தீர்வுகளில் உள்ள மாறத்தக்க மாறிலிகளின் எண்ணிக்கை முறையே",
+      "options": {
+        "A": "$n-1, n$",
+        "B": "$n, n+1$",
+        "C": "$n+1, n+2$",
+        "D": "$n+1, n$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "மூன்றாம் வரிசை வகைக்கெழுச் சமன்பாட்டின் குறிப்பிட்டத் தீர்வில் உள்ள மாறத்தக்க மாறிலிகளின் எண்ணிக்கை",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 21,
+    "content": {
+      "question": "$\\frac{dy}{dx}=\\frac{x+y+1}{x+1}$ எனும் வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி",
+      "options": {
+        "A": "$\\frac{1}{x+1}$",
+        "B": "$x+1$",
+        "C": "$\\frac{1}{\\sqrt{x+1}}$",
+        "D": "$\\sqrt{x+1}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 22,
+    "content": {
+      "question": "ஏதேனும் ஒரு வருடம் t-ல் உள்ள P-ன் பெருக்க வீதமானது மக்கள் தொகைக்கு விகிதமாக அமையும் எனில், பின்னர்",
+      "options": {
+        "A": "$P=Ce^{kt}$",
+        "B": "$P=Ce^{-kt}$",
+        "C": "$P=Ckt$",
+        "D": "$P=C$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 23,
+    "content": {
+      "question": "t எனும் நேரத்திற்குப் பிறகு மீதமுள்ள ஒரு பொருளின் அளவு P ஆகும். பொருள் ஆவியாகும் வீதமானது அந்நேரத்தில் மீதமிருக்கும் பொருளின் அளவிற்கு விகிதமாக அமைந்துள்ளது எனில், பின்னர்",
+      "options": {
+        "A": "$P=Ce^{kt}$",
+        "B": "$P=Ce^{-kt}$",
+        "C": "$P=Ckt$",
+        "D": "$Pt=C$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 24,
+    "content": {
+      "question": "$\\frac{dy}{dx}=\\frac{ax+3}{2y+f}$ எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு ஒரு வட்டத்தைக் குறிக்குமானால், a-ன் மதிப்பு",
+      "options": {
+        "A": "2",
+        "B": "-2",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "10",
+    "unit_name": "வகைக்கெழுச் சமன்பாடுகள்",
+    "section": "பயிற்சி 10.9",
+    "type": "MCQ",
+    "question_no": 25,
+    "content": {
+      "question": "$y=f(x)$ எனும் வளைவரையின் ஏதேனும் ஒரு புள்ளியிடத்து சாய்வு $\\frac{dy}{dx}=3x^{2}$ எனக் கொடுக்கப்பட்டுள்ளது. மேலும் வளைவரையானது (-1,1) புள்ளி வழியாகச் செல்கிறது எனில், வளைவரையின் சமன்பாடு",
+      "options": {
+        "A": "$y=x^{3}+2$",
+        "B": "$y=3x^{2}+4$",
+        "C": "$y=3x^{3}+4$",
+        "D": "$y=x^{3}+5$"
+      },
+      "answer": "A"
+    }
+  },
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "X எனும் சமவாய்ப்பு மாறியின் நிகழ்தகவு அடர்த்தி சார்பு $f(x) = \\begin{cases} \\frac{2}{x^{3}} & x \\ge 1 \\\\ 0 & x < 1 \\end{cases}$ எனில், இவற்றில் எந்த கூற்று சரியானது?",
+      "options": {
+        "A": "சராசரி மற்றும் பரவற்படி உள்ளது",
+        "B": "சராசரி உள்ளது ஆனால் பரவற்படி இல்லை",
+        "C": "சராசரி ,பரவற்படி இரண்டுமே இல்லை",
+        "D": "பரவற்படி உள்ளது ஆனால் சராசரி இல்லை"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "$2l$ நீளமுள்ள ஒரு கம்பி சமவாய்ப்பு முறையில் இரு துண்டாக உடைந்தது. இரு துண்டுகளில் குட்டையானதற்கான நிகழ்தகவு அடர்த்தி சார்பு $f(x) = \\begin{cases} \\frac{1}{l} & 0 < x < l \\\\ 0 & l \\le x < 2l \\end{cases}$ எனில் குட்டையானப் பகுதிக்கான சராசரி மற்றும் பரவற்படி முறையே,",
+      "options": {
+        "A": "$\\frac{l}{2}, \\frac{l^{2}}{3}$",
+        "B": "$\\frac{l}{2}, \\frac{l^{2}}{6}$",
+        "C": "$\\frac{l}, \\frac{l^{2}}{12}$",
+        "D": "$\\frac{l}{2}, \\frac{l^{2}}{12}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "ஒரு விளையாட்டில் அறுபக்க பகடையை விளையாடுபவர் உருட்டுகிறார். பகடை எண் 6 -ஐக் காட்டினால், விளையாடுபவர் ₹36 வெல்லுவார், இல்லையெனில் $₹k^{2}$ தோற்பார். இங்கு k என்பது பகடை காட்டும் எண். $k = \\{1, 2, 3, 4, 5\\}$. விளையாட்டில் எதிர்பார்க்கப்படும் வெல்லும் தொகை ₹",
+      "options": {
+        "A": "$\\frac{19}{6}$",
+        "B": "$-\\frac{19}{6}$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$-\\frac{3}{2}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "1, 2 , 3 , 4 , 5 , 6 எண்ணிடப்பட்ட அறுபக்க பகடையும் 1, 2 , 3 , 4 என எண்ணிடப்பட்ட நான்கு பக்க பகடையும் சோடியாக உருட்டப்பட்டு இரண்டும் காட்டும் எண்களின் கூட்டல்தொகை தீர்மானிக்கப்படுகிறது . இந்தகூட்டலைத் குறிக்கும் சமவாய்ப்பு மாறி X என்க. இனி 7 -இன் நேர்மாறு பிம்பத்தின் உறுப்புகளின் எண்ணிக்கை",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "$n = 25$ மற்றும் $p = 0.8$ என்று உள்ள ஈருறுப்பு பரவல் கொண்ட சமவாய்ப்பு மாறி X எனில் X -ன் திட்ட விலக்கத்தின் மதிப்பு",
+      "options": {
+        "A": "6",
+        "B": "4",
+        "C": "3",
+        "D": "2"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "n முறை சுண்டப்படும் ஒரு நாணயத்தினால் பெறப்படும் தலை மற்றும் பூக்களின் எண்ணிக்கை வேறுபாட்டை X குறிக்கிறது என்க. X -இன் சாத்திய மதிப்புகள்",
+      "options": {
+        "A": "$i+2n, i = 0,1,2...n$",
+        "B": "$2i–n, i = 0,1,2...n$",
+        "C": "$n–i, i = 0,1,2...n$",
+        "D": "$2i+2n, i = 0,1,2...n$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$f(x) = \\frac{1}{12}, a < x < b$ எனும் சார்பு ஒரு தொடர்ச்சியான சமவாய்ப்பு மாறியின் நிகழ்தகவு அடர்த்தி சார்பினைக் குறிக்கிறது எனில், பின்வருவனவற்றுள் எது a மற்றும் b -இன் மதிப்புகளாக இராது?",
+      "options": {
+        "A": "0 மற்றும் 12",
+        "B": "5 மற்றும் 17",
+        "C": "7 மற்றும் 19",
+        "D": "16 மற்றும் 24"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "ஒரு கால்பந்தாட்ட அரங்கிற்கு ஒரே பள்ளியிலிருந்து நான்கு பேருந்துகள் 160 மாணவர்களை ஏற்றிக்கொண்டு வருகிறது. அப்பேருந்துகளில் முறையே 42 ,36 ,34 ,மற்றும் 48 மாணவர்கள் பயணிக்கின்றனர். சமவாய்ப்பு முறையில் ஒரு மாணவர் தேர்ந்தெடுக்கப்படுகிறார். அவ்வாறு சமவாய்ப்பு முறையில் தேர்ந்தெடுக்கப்பட்ட மாணவர் பயணிக்கும் பேருந்திலுள்ள மாணவர்களின் எண்ணிக்கையை X குறிக்கிறது என்க. நான்கு பேருந்து ஓட்டுனர்களில் ஒருவர் சமவாய்ப்பு முறையில் தேர்ந்தெடுக்கப்படுகின்றனர். அவ்வாறு தேர்ந்தெடுக்கப்பட்ட ஓட்டுநர் ஓட்டி வரும் பேருந்திலுள்ள மாணவர்களின் எண்ணிக்கையை Y குறிக்கிறது என்க. இனி $E(X)$ மற்றும் $E(Y)$ முறையே",
+      "options": {
+        "A": "50, 40",
+        "B": "40, 50",
+        "C": "40.75, 40",
+        "D": "41, 41"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "இரு நாணயங்கள் சுண்டப்படுகின்றன. முதல் நாணயத்தில் தலை கிடைப்பதற்கான நிகழ்தகவு 0.6 மற்றும் இரண்டாவது நாணயத்தின் மூலம் தலை கிடைக்க நிகழ்தகவு 0.5 ஆகும். சுண்டி விடுதலின் முடிவுகள் சார்பற்றவை எனக் கருதுக. X என்பது மொத்த தலைகளின் எண்ணிக்கையைக் குறிக்கிறது என்க. $E(X)$-ன் மதிப்பு",
+      "options": {
+        "A": "0.11",
+        "B": "1.1",
+        "C": "11",
+        "D": "1"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "பலவுள் தேர்வு ஒன்றில் 5 வினாக்கள் ஒவ்வொன்றிற்கும் 3 சாத்தியமானக் கவனச் சிதறல் விடைகள் உள்ளது. ஊகத்தின் அடிப்படையில் 4 அல்லது அதற்கு மேல் சரியான விடையை ஒரு மாணவர் அளிப்பதற்கான நிகழ்தகவு",
+      "options": {
+        "A": "$\\frac{11}{243}$",
+        "B": "$\\frac{10}{243}$",
+        "C": "$\\frac{1}{243}$",
+        "D": "$\\frac{5}{243}$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$P(X=0)=1−P(X=1)$ மற்றும் $E(X)=3Var(X)$ எனில், $P(X=0)$ காண்க",
+      "options": {
+        "A": "$\\frac{2}{3}$",
+        "B": "$\\frac{2}{5}$",
+        "C": "$\\frac{1}{5}$",
+        "D": "$\\frac{1}{3}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "எதிர்பார்ப்பு மதிப்பு 6 மற்றும் பரவற்படி 2.4 கொண்ட ஒரு ஈருறுப்பு சமவாய்ப்பு மாறி X எனில் $P(X=5)$-இன் மதிப்பு",
+      "options": {
+        "A": "$\\binom{10}{5}(\\frac{3}{5})^{6}(\\frac{2}{5})^{4}$",
+        "B": "$\\binom{10}{5}(\\frac{3}{5})^{10}$",
+        "C": "$\\binom{10}{5}(\\frac{3}{5})^{4}(\\frac{2}{5})^{6}$",
+        "D": "$\\binom{10}{5}(\\frac{3}{5})^{5}(\\frac{2}{5})^{5}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 13,
+    "content": {
+      "question": "சமவாய்ப்பு மாறி X -ன் நிகழ்தகவு அடர்த்தி சார்பு $f(x) = \\begin{cases} ax+b & 0 < x < 1 \\\\ 0 & \\text{பிற மதிப்புகளுக்கு} \\end{cases}$ மற்றும் $E(X)=\\frac{7}{12}$, எனில் a மற்றும் b -ன் மதிப்புகள் முறையே",
+      "options": {
+        "A": "1 மற்றும் $\\frac{1}{2}$",
+        "B": "$\\frac{1}{2}$ மற்றும் 1",
+        "C": "2 மற்றும் 1",
+        "D": "1 மற்றும் 2"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "0, 1, மற்றும் 2 ஆகிய மதிப்புகளில் ஒன்றை X கொள்கிறது என்க. ஏதோ ஒரு மாறிலி k -விற்கு , $P(X=i) = k P(X=i-1)$, $i=1, 2$ மற்றும் $P(X=0)=\\frac{1}{7}$ எனில் k -இன் மதிப்பு காண்க",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 15,
+    "content": {
+      "question": "பின்வருவனவற்றுள் எது தனிநிலை சமவாய்ப்பு மாறி?\nI. ஒரு நாளில் ஒரு குறிப்பிட்ட சமிக்கையைக் கடக்கும் மகிழுந்துகளின் எண்ணிக்கை\nII. ஒரு குறிப்பிட்ட கணத்தில் தொடர்வண்டி பயணச் சீட்டு வாங்க வரிசையில் காத்திருக்கும் பயணிகளின் எண்ணிக்கை.\nIII. ஒரு தொலைபேசி அழைப்பை நிறைவு செய்யும் காலம்.",
+      "options": {
+        "A": "I மற்றும் II",
+        "B": "II மட்டுமே",
+        "C": "III மட்டுமே",
+        "D": "II மற்றும் III"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 16,
+    "content": {
+      "question": "ஒரு சமவாய்ப்பு மாறியின் நிகழ்தகவு அடர்த்தி சார்பு $f(x) = \\begin{cases} 2x & 0 \\le x \\le a \\\\ 0 & \\text{பிற மதிப்புகளுக்கு} \\end{cases}$ எனில், a –இன் மதிப்பு",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "ஒரு நிகழ்தகவு மாறியின் நிகழ்தகவு சார்பு கீழ்க்காணுமாறு வரையறுக்கப்படுகிறது:\n| $x$ | –2 | –1 | 0 | 1 | 2 |\n|-----|\n| $f(x)$ | $k$ | $2k$ | $3k$ | $4k$ | $5k$ |\nஎனில், $E(X)$ -க்கு சமமான மதிப்பு",
+      "options": {
+        "A": "$\\frac{1}{15}$",
+        "B": "$\\frac{1}{10}$",
+        "C": "$\\frac{1}{3}$",
+        "D": "$\\frac{2}{3}$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "சராசரி 0.4 கொண்ட ஒரு பெர்னோலி பரவல் X எனில் $(2X - 3)$-ன் பரவல்",
+      "options": {
+        "A": "0.24",
+        "B": "0.48",
+        "C": "0.6",
+        "D": "0.96"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "ஈருறுப்பு மாறி X ஆறு முயற்சிகளில் $9P(X=4) = P(X=2)$ எனும் தொடர்பினை அனுசரிக்கிறது எனில் வெற்றியின் நிகழ்தகவு",
+      "options": {
+        "A": "0.125",
+        "B": "0.25",
+        "C": "0.375",
+        "D": "0.75"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "11",
+    "unit_name": "நிகழ்தகவு பரவல்கள்",
+    "section": "பயிற்சி 11.6",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "ஒரு கணினி விற்பனையாளர் தனது கடந்த கால அனுபவத்திலிருந்து தனது காட்சிகூடத்திற்குள் நுழையும் ஒவ்வொரு இருபது வாடிக்கையாளர்களில் ஒருவருக்கு கணினிகளை விற்கிறார் என்பது தெரியும். அடுத்த மூன்று வாடிக்கையாளர்களில் சரியாக இரண்டு பேருக்கு அவர் ஒரு கணினியை விற்கும் நிகழ்தகவு என்ன?",
+      "options": {
+        "A": "$\\frac{57}{20^{3}}$",
+        "B": "$\\frac{57}{20^{2}}$",
+        "C": "$\\frac{19^{3}}{20^{3}}$",
+        "D": "$\\frac{57}{20}$"
+      },
+      "answer": "A"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 1,
+    "content": {
+      "question": "ஓர் ஈருறுப்புச் செயலி S என்ற ஒரு கணத்தின் மீது ஒரு சார்பாக பின்வருவனவற்றிலிருந்து பெறப்படுகிறது",
+      "options": {
+        "A": "$S \\rightarrow S$",
+        "B": "$(S \\times S) \\rightarrow S$",
+        "C": "$S \\rightarrow (S \\times S)$",
+        "D": "$(S \\times S) \\rightarrow (S \\times S)$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 2,
+    "content": {
+      "question": "கழித்தலின் கீழ் பின்வரும் கணம் அடைவு பெறவில்லை.",
+      "options": {
+        "A": "$\\mathbb{R}$",
+        "B": "$\\mathbb{Z}$",
+        "C": "$\\mathbb{N}$",
+        "D": "$\\mathbb{Q}$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 3,
+    "content": {
+      "question": "பின்வருபவைகளில் எது $\\mathbb{N}$-ன் மீது ஓர் ஈருறுப்புச் செயலி ஆகும்.",
+      "options": {
+        "A": "கழித்தல்",
+        "B": "பெருக்கல்",
+        "C": "வகுத்தல்",
+        "D": "அனைத்தும்"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 4,
+    "content": {
+      "question": "மெய் எண்களின் கணம் $\\mathbb{R}$-ன் மீது ‘* ’ பின்வருமாறு வரையறுக்கப்படுகிறது. இதில் எது $\\mathbb{R}$-ன் மீது ஈருறுப்புச் செயலி அல்ல?",
+      "options": {
+        "A": "$a*b=\\min(a, b)$",
+        "B": "$a*b=\\max(a, b)$",
+        "C": "$a*b=a$",
+        "D": "$a*b=a^b$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 5,
+    "content": {
+      "question": "∗ என்ற ஈருறுப்புச் செயலி $a*b=\\frac{ab}{7}$ என வரையறுக்கப்படுகிறது. ∗ எதன் மீது ஈருறுப்புச் செயலி ஆகாது?",
+      "options": {
+        "A": "$\\mathbb{Q}^+$",
+        "B": "$\\mathbb{Z}$",
+        "C": "$\\mathbb{R}$",
+        "D": "$\\mathbb{C}$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 6,
+    "content": {
+      "question": "$\\mathbb{Q}$ என்ற கணத்தில் $a \\otimes b = a+b+ab$ என வரையறு. பின்னர் $3 \\otimes (y \\otimes 5) = 7$-ன் தீர்வு",
+      "options": {
+        "A": "$y = \\frac{2}{3}$",
+        "B": "$y = -\\frac{2}{3}$",
+        "C": "$y = -\\frac{3}{2}$",
+        "D": "$y = 4$"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 7,
+    "content": {
+      "question": "$\\mathbb{R}$-ன் மீது $a*b=\\sqrt{a^2+b^2}$ எனில், ∗ ஆனது",
+      "options": {
+        "A": "பரிமாற்று விதிக்கு கட்டுப்படும் ஆனால் சேர்ப்பு விதியை நிறைவு செய்யாது.",
+        "B": "சேர்ப்பு விதிக்கு கட்டுப்படும் ஆனால் பரிமாற்று விதியை நிறைவு செய்யாது.",
+        "C": "பரிமாற்று விதி மற்றும் சேர்ப்பு விதிகளை நிறைவு செய்யும்.",
+        "D": "பரிமாற்று விதி மற்றும் சேர்ப்பு விதிகளை நிறைவு செய்யாது."
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 8,
+    "content": {
+      "question": "பின்வரும் கூற்றுகளில் எது T மெய்மதிப்பை பெற்றிருக்கும்?",
+      "options": {
+        "A": "sin x ஓர் இரட்டைச் சார்பு.",
+        "B": "ஒவ்வொரு சதுர அணியும் பூச்சியமற்ற கோவை அணி ஆகும்.",
+        "C": "ஒரு கலப்பெண் மற்றும் அதன் இணை எண்ணின் பெருக்கற்பலன் முற்றிலும் கற்பனை.",
+        "D": "$\\sqrt{5}$ ஒரு விகிதமுறா எண்"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 9,
+    "content": {
+      "question": "பின்வருபவைகளில் எது மெய்மதிப்பு F ஐ பெற்றிருக்கும்?",
+      "options": {
+        "A": "சென்னை இந்தியாவில் உள்ளது அல்லது $\\sqrt{2}$ ஒரு முழு எண்",
+        "B": "சென்னை இந்தியாவில் உள்ளது அல்லது $\\sqrt{2}$ ஒரு விகிதமுறா எண்",
+        "C": "சென்னை சீனாவில் உள்ளது அல்லது $\\sqrt{2}$ ஒரு முழு எண்",
+        "D": "சென்னை சீனாவில் உள்ளது அல்லது $\\sqrt{2}$ ஒரு விகிதமுறா எண்"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 10,
+    "content": {
+      "question": "ஒரு கூட்டுக் கூற்றில் 3 தனிக் கூற்றுகள் உட்படுத்தப்பட்டிருந்தால் அம்மெய்மை அட்டவணையின் நிரைகளின் எண்ணிக்கை",
+      "options": {
+        "A": "9",
+        "B": "8",
+        "C": "6",
+        "D": "3"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 11,
+    "content": {
+      "question": "$(p \\vee q) \\rightarrow (p \\wedge q)$-ன் எதிர்மறை கூற்று எது?",
+      "options": {
+        "A": "$(p \\wedge q) \\rightarrow (p \\vee q)$",
+        "B": "$\\neg(p \\vee q) \\rightarrow (p \\wedge q)$",
+        "C": "$(\\neg p \\vee \\neg q) \\rightarrow (\\neg p \\wedge \\neg q)$",
+        "D": "$(\\neg p \\wedge \\neg q) \\rightarrow (\\neg p \\vee \\neg q)$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 12,
+    "content": {
+      "question": "$(p \\vee q) \\rightarrow r$-ன் நேர்மாறுக் கூற்று எது?",
+      "options": {
+        "A": "$\\neg r \\rightarrow (\\neg p \\wedge \\neg q)$",
+        "B": "$\\neg r \\rightarrow (p \\vee q)$",
+        "C": "$r \\rightarrow (p \\wedge q)$",
+        "D": "$p \\rightarrow (q \\vee r)$"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 13,
+    "image":"/data/img/12_maths_12_13.png",
+    "content": {
+      "question": "$(p \\wedge q) \\vee (\\neg q)$-ன் மெய்மை அட்டவணை கீழே தரப்பட்டுள்ளது.\n| p | q | $(p \\wedge q) \\vee (\\neg q)$ |\n|---|---|---|\n| T | T | (a) |\n| T | F | (b) |\n| F | T | (c) |\n| F | F | (d) |\nபின்வருபவைகளில் எது உண்மை?",
+      "options": {
+        "A": "(a) T, (b) T, (c) T, (d) T",
+        "B": "(a) T, (b) F, (c) T, (d) T",
+        "C": "(a) T, (b) T, (c) F, (d) T",
+        "D": "(a) T, (b) F, (c) F, (d) F"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 14,
+    "content": {
+      "question": "$\\neg(p \\vee \\neg q)$-ன் மெய்மை அட்டவணையில் கடைசி நிரலில் வரும் மெய்மதிப்பு 'F' விளைவுகளின் எண்ணிக்கை",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 15,
+    
+    "content": {
+      "question": "பின்வருபவைகளில் எது சரியல்ல? p மற்றும் q ஏதேனும் இரு கூற்றுகளுக்கு பின்வரும் தர்க்க சமானமானவைகள் பெறப்படுகிறது.",
+      "options": {
+        "A": "$\\neg(p \\vee q) \\equiv \\neg p \\wedge \\neg q$",
+        "B": "$\\neg(p \\wedge q) \\equiv \\neg p \\vee \\neg q$",
+        "C": "$\\neg(p \\vee q) \\equiv \\neg p \\vee \\neg q$",
+        "D": "$\\neg(\\neg p) \\equiv p$"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 16,
+    "image":"/data/img/12_maths_12_16.png",
+    "content": {
+      "question": "| p | q | $(p \\wedge q) \\rightarrow \\neg p$ |\n|---|---|---|\n| T | T | (a) |\n| T | F | (b) |\n| F | T | (c) |\n| F | F | (d) |\n$(p \\wedge q) \\rightarrow \\neg p$-ன் மெய்மை அட்டவணைக்கு பின்வருபவைகளில் எது சரி?",
+      "options": {
+        "A": "(a) T, (b) T, (c) T, (d) T",
+        "B": "(a) F, (b) T, (c) T, (d) T",
+        "C": "(a) F, (b) F, (c) T, (d) T",
+        "D": "(a) T, (b) T, (c) T, (d) F"
+      },
+      "answer": "B"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 17,
+    "content": {
+      "question": "$\\neg(p \\vee q) \\vee [p \\vee (p \\wedge \\neg r)]$-ன் இருமம்",
+      "options": {
+        "A": "$\\neg(p \\wedge q) \\wedge [p \\vee (p \\wedge \\neg r)]$",
+        "B": "$(p \\wedge q) \\wedge [p \\wedge (p \\vee \\neg r)]$",
+        "C": "$\\neg(p \\wedge q) \\wedge [p \\wedge (p \\wedge r)]$",
+        "D": "$\\neg(p \\wedge q) \\wedge [p \\wedge (p \\vee \\neg r)]$"
+      },
+      "answer": "D"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 18,
+    "content": {
+      "question": "$p \\wedge (\\neg p \\vee q)$ என்ற கூற்று",
+      "options": {
+        "A": "ஒரு மெய்மம்",
+        "B": "ஒரு முரண்பாடு",
+        "C": "$p \\wedge q$-க்கு தர்க்க சமானமானவை",
+        "D": "$p \\vee q$-க்கு தர்க்க சமானமானவை"
+      },
+      "answer": "C"
+    }
+  },
+  {
+    "class": "12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 19,
+    "content": {
+      "question": "பின்வரும் ஒவ்வொரு கூற்றிற்கும் அதன் மெய் மதிப்பை தீர்மானிக்க.\n(a) $4+2=5$ மற்றும் $6+3=9$\n(b) $3+2=5$ மற்றும் $6+1=7$\n(c) $4+5=9$ மற்றும் $1+2=4$\n(d) $3+2=5$ மற்றும் $4+7=11$",
+      "options": {
+        "A": "(a) F, (b) T, (c) F, (d) T",
+        "B": "(a) T, (b) F, (c) T, (d) F",
+        "C": "(a) T, (b) T, (c) F, (d) F",
+        "D": "(a) F, (b) F, (c) T, (d) T"
+      },
+      "answer": "A"
+    }
+  },
+  {
+    "class":"12",
+    "subject": "கணிதவியல்",
+    "unit_no": "12",
+    "unit_name": "தனி நிலைக் கணிதம்",
+    "section": "பயிற்சி 12.3",
+    "type": "MCQ",
+    "question_no": 20,
+    "content": {
+      "question": "பின்வருபவைகளில் எது உண்மையல்ல?",
+      "options": {
+        "A": "ஒரு கூற்றின் மறுப்பின் மறுப்பு அக்கூற்றேயாகும்.",
+        "B": "ஒரு மெய்மை அட்டவணையில் இறுதி நிரல் முழுவதும் T எனில் அது ஒரு மெய்மமாகும்.",
+        "C": "ஒரு மெய்மை அட்டவணையில் இறுதி நிரல் முழுவதும் F எனில் அது ஒரு முரண்பாடாகும்.",
+        "D": "p மற்றும் q ஏதேனும் இரு கூற்றுகள் எனில் $p \\leftrightarrow q$ என்பது ஒரு மெய்மமாகும்."
+      },
+      "answer": "D"
+    }
+  }
+]
