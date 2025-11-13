@@ -446,6 +446,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               ➤
             </button>
           </div>
+          <p>   Dude AI can make mistakes, so double-check it</p>
         </div>
       )}
     </div>
