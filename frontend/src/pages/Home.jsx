@@ -20,6 +20,28 @@ export default function Home(){
 
   return (
     <div>
+
+<h3
+  style={{
+    background: "#f8fafc",
+    padding: "14px 18px",
+    borderRadius: "10px",
+    border: "1px solid #e2e8f0",
+    color: "#1e293b",
+    fontSize: "18px",
+    fontWeight: 500,
+    lineHeight: "1.6",
+    maxWidth: "700px",
+    marginBottom: "24px",
+  }}
+>
+  It has been identified that several answers are incorrect. A correction is
+  required{" "}
+  <strong style={{ fontWeight: 600, color: "#0f172a" }}>
+    within the next 48 hours.
+  </strong>
+</h3>
+
       <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:16}}>
         <div>
           <h2 style={{margin:0}}>Choose Your Class</h2>
