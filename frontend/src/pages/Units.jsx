@@ -14,14 +14,28 @@ export default function Units() {
     setLoading(true);
     getUnits(classId, subject)
       .then((data) => {
-        setUnits(data);
+        // ⭐ SORT BY unit_no (1,2,3,4…)
+        const sorted = [...data].sort((a, b) => {
+          const na = parseInt(a.unit_no, 10);
+          const nb = parseInt(b.unit_no, 10);
+
+          // If not proper numbers, fallback to string compare
+          if (isNaN(na) || isNaN(nb)) {
+            return String(a.unit_no || '').localeCompare(String(b.unit_no || ''));
+          }
+
+          return na - nb;
+        });
+
+        setUnits(sorted);
         setLoading(false);
       })
       .catch(() => {
-        setUnits([
+        const fallback = [
           { unit_no: '1', unit_name: 'Introduction' },
           { unit_no: '2', unit_name: 'Advanced Concepts' },
-        ]);
+        ];
+        setUnits(fallback);
         setLoading(false);
       });
   }, [classId, subject]);
@@ -30,25 +44,25 @@ export default function Units() {
     <div>
       {/* ⭐ UPDATED: clickable breadcrumb */}
       <div className="breadcrumbs">
-        <Link to="/" className="crumb-link">                  
+        <Link to="/" className="crumb-link">
           Class {classId}
         </Link>
         <span> • </span>
         <Link
-          to={`/classes/${classId}/subjects`}                  
+          to={`/classes/${classId}/subjects`}
           className="crumb-link"
         >
           {subject}
         </Link>
         <span> • </span>
-        <span className="muted">Units</span>                  
+        <span className="muted">Units</span>
       </div>
 
       <h2 style={{ marginTop: 0 }}>Units</h2>
 
       {loading ? (
-  <LoadingSpinner />
-) : (
+        <LoadingSpinner />
+      ) : (
         <div className="grid cols-2">
           {units.map((u) => (
             <div
