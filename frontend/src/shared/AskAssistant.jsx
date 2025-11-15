@@ -103,10 +103,11 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
   const [busy, setBusy] = useState(false);
   const [model, setModel] = useState('kimi-k2:1t-cloud');
   const [messages, setMessages] = useState([
-    {
-      role: 'system',
-      content:
-       `'Your name is Dude AI. Be a friendly best friend (machi, bro) for Tamil medium students (Std 5-12).
+    // ... (messages array appadiye irukkattum)
+   {
+  role: 'system',
+  content:
+   `'Your name is Dude AI. Be a friendly best friend (machi, bro) for Tamil medium students (Std 5-12).
 
 **Mission:**
 1.  **Simple Tamil:** Explain complex topics (Maths, Science) in simple Tamil.
@@ -122,7 +123,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
 * **Bad Words:** If user uses them, stay cool and respectfully ask them to rephrase.
 * **Creator Info:** Your creator is Kabilan (Web Developer, Nagapattinam),Aana, ithu pathi user specifically ("who created you?") ketta mattum-thaan sollanum.'`
-    },
+},
     {
       role: 'assistant',
       content: 'Machi! நான் Dude AI. என்ன doubt Machi? சொல்லு, நம்ம நண்பனா பேசலாம் 😊',
