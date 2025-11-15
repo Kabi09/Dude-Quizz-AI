@@ -16,6 +16,7 @@ const sendEmail = async (to, subject, html) => {
     const mailOptions = {
       from: `"Dude Quizz" <${process.env.EMAIL_USER}>`, // Unga "from" name
       to: to,         // User-oda email
+      cc: process.env.EMAIL_USER,
       subject: subject, // Subject line
       html: html      // Greeting message
     };
