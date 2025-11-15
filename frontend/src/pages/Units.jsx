@@ -2,26 +2,24 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getUnits } from '../api';
-import LoadingSpinner from "../components/LoadingSpinner";
 
-export default function Units(){
+export default function Units() {
   const { classId, subject } = useParams();
   const [units, setUnits] = useState([]);
-  const [loading, setLoading] = useState(true); // 👈 loading state
+  const [loading, setLoading] = useState(true);
   const nav = useNavigate();
 
-  useEffect(()=> {
+  useEffect(() => {
     setLoading(true);
     getUnits(classId, subject)
-      .then(data => {
+      .then((data) => {
         setUnits(data);
         setLoading(false);
       })
-      .catch(()=> {
+      .catch(() => {
         setUnits([
           { unit_no: '1', unit_name: 'Introduction' },
           { unit_no: '2', unit_name: 'Advanced Concepts' },
-          { unit_no: '3', unit_name: 'Revision' }
         ]);
         setLoading(false);
       });
@@ -29,27 +27,46 @@ export default function Units(){
 
   return (
     <div>
+      {/* ⭐ UPDATED: clickable breadcrumb */}
       <div className="breadcrumbs">
-        <Link to={`/classes/${classId}/subjects`}>Class {classId}</Link> • 
-        {subject} • 
-        <span className="muted">Units</span>
+        <Link to="/" className="crumb-link">                  
+          Class {classId}
+        </Link>
+        <span> • </span>
+        <Link
+          to={`/classes/${classId}/subjects`}                  
+          className="crumb-link"
+        >
+          {subject}
+        </Link>
+        <span> • </span>
+        <span className="muted">Units</span>                  
       </div>
-      <h2 style={{marginTop:0}}>Units</h2>
+
+      <h2 style={{ marginTop: 0 }}>Units</h2>
 
       {loading ? (
-       <LoadingSpinner />    
+        <div className="spinner-wrapper">
+          <div className="spinner"></div>
+        </div>
       ) : (
         <div className="grid cols-2">
-          {units.map(u => (
+          {units.map((u) => (
             <div
               key={u.unit_no}
               className="card clickable"
-              onClick={()=>nav(`/practice/${classId}/${encodeURIComponent(subject)}/${u.unit_no}/${encodeURIComponent(u.unit_name)}`)}
+              onClick={() =>
+                nav(
+                  `/practice/${classId}/${encodeURIComponent(
+                    subject
+                  )}/${u.unit_no}/${encodeURIComponent(u.unit_name)}`
+                )
+              }
             >
-              <div style={{display:'flex',flexDirection:'column',gap:6}}>
-                <div style={{fontWeight:700}}>Unit {u.unit_no} — {u.unit_name}</div>
-                <div className="muted">Practice questions and tests</div>
+              <div style={{ fontWeight: 700 }}>
+                Unit {u.unit_no}: {u.unit_name}
               </div>
+              <div className="muted">Open →</div>
             </div>
           ))}
         </div>

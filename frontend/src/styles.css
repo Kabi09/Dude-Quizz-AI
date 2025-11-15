@@ -1282,3 +1282,34 @@ body.dark-mode .draggable-answer.used {
     box-shadow: 0 18px 45px rgba(0,0,0,0.35);
   }
 }
+
+
+
+
+
+
+/* ⭐ NEW: Breadcrumb styles */
+.breadcrumbs {
+  font-size: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.crumb-link {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.crumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  margin: 0 4px;
+}
+
+/* existing spinner-wrapper / spinner already okay */
+
