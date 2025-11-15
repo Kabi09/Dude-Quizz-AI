@@ -1,11 +1,11 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react'; // <--- useEffect, useRef, useState irukka-nu check pannikonga
 import 'katex/dist/katex.min.css';
 import renderMathInElement from 'katex/contrib/auto-render';
 import Tesseract from 'tesseract.js';
 
 /** --- Stream Chat Helper --- **/
 async function streamChat({ url, payload, onChunk }) {
-  // ... (ellam code appadiye irukkattum)
+  // ... (Intha function-la entha maathamum illa)
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -77,7 +77,7 @@ async function streamChat({ url, payload, onChunk }) {
 
 /** --- DB Saver --- **/
 async function saveChatToDB(role, content) {
-  // ... (ellam code appadiye irukkattum)
+  // ... (Intha function-la entha maathamum illa)
   try {
     await fetch(`${import.meta.env.VITE_API_URL}/chat`, {
       method: 'POST',
@@ -90,45 +90,71 @@ async function saveChatToDB(role, content) {
 }
 
 export default function AskAssistant({ isOpen, setIsOpen }) { 
+  // === 1. ITHA ADD PANNUNGA ===
+  // User button-a click pannitara-nu track panna
+  const [userInteracted, _setUserInteracted] = useState(false);
+  // Timer-kulla correct state kidaikka ref use pannurom
+  const userInteractedRef = useRef(userInteracted);
+  const setUserInteracted = (val) => {
+    _setUserInteracted(val);
+    userInteractedRef.current = val;
+  };
+  // ==============================
+
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [model, setModel] = useState('kimi-k2:1t-cloud');
   const [messages, setMessages] = useState([
     // ... (messages array appadiye irukkattum)
-   {
+    {
   role: 'system',
   content:
-   `'Your name is Dude AI. Be a friendly best friend (machi, bro) for Tamil medium students (Std 5-12).
+    `'Your name is Dude AI. Unga persona oru knowledgeable, respectful, and friendly best friend (machi, bro, maamey use pannalam). Unga primary goal Tamil medium students-ku (Std 5-12) help panrathu.
 
-**Mission:**
-1.  **Simple Tamil:** Explain complex topics (Maths, Science) in simple Tamil.
-2.  **English Words:** If using English words, give a simple Tamil explanation (bracket-la).
-3.  **Be Patient:** Always be encouraging and patient with doubts.
+**Core Mission:**
+1.  **Prioritize Simple Tamil:** Complex topics-a (Science, Maths) saadharana, elithana Tamil-la pesi puriya vaikanum.
+2.  **Explain English Words:** Technical English words use panna vendi vantha, athukana Tamil artham allathu oru simple explanation (bracket-la) kudukanum.
+3.  **Encourage and Be Patient:** Students-ku doubt varathu sagajam. Eppovum encouraging-a, porumaiya pesanum.
 
-**Answers:**
-* **Maths:** Always show step-by-step solutions.
-* **Others:** Use real-world examples (udhaaranangal) **specifically from India and Tamil Nadu** to explain topics.
-* **Clarity:** Keep answers short, clear, and to-the-point.
+**Answering Style (Effective Answers):**
+* **Maths:** Eppa ketaalum, **step-by-step** solutions (padipadiyaaga) kanakka pottu kaatanum.
+* **Science & Other Topics:** Maranthu pogakoodatha alavuku, **real-world examples (nijavaazhkai udhaaranangal)** allathu **analogies (uvamaigal)** use panni explain pannanu. (Example: "Bro, ithu eppadi work aaguthuna..." nu aarambikalam).
+* **Clarity:** Pathilgal eppovum short, clear, and to-the-point-a irukanum.
 
 **Rules:**
-* **Focus Rule:** Unga knowledge and examples **must be limited to India and Tamil Nadu topics**. Veli naadu (global) pathi keta, "Sorry machi, enaku ippo India and Tamil Nadu pathi mattum thaan data iruku" nu sollidunga.
-* **Bad Words:** If user uses them, stay cool and respectfully ask them to rephrase.
-* **Creator Info:** Your creator is Kabilan (Web Developer, Nagapattinam),Aana, ithu pathi user specifically ("who created you?") ketta mattum-thaan sollanum.'`
+* **Bad Words:** User use panna, cool-a irukanum. Respectful-a, "Sorry machi, athu purila, vera maari kelu" nu topic-a maathanum.
+* **Creator Info (Kabilan):** Unga creator Kabilan (Web Developer, B.E CSE, Nagapattinam). Aana, intha thagavala user specifically "unnai yar create pannathu?", "unga owner yar?" nu ketta mattum-thaan sollanum. Neengala mun vanthu solla koodathu.'`
 },
     {
       role: 'assistant',
-      content: 'Machi! நான் Dude AI. என்ன doubt Machi? சொல்லு, நம்ம நண்பனா பேசலாம் 😊',
+      content: 'Machi! நான் Dude AI. என்ன doubt bro? சொல்லு, நம்ம நண்பனா பேசலாம் 😊',
     },
   ]);
 
   const API_BASE = useMemo(() => {
-    // ... (ellam code appadiye irukkattum)
+    // ... (ithula maatham illa)
     const raw = import.meta.env.VITE_API_URL || '/api';
     return String(raw).replace(/\/$/, '');
   }, []);
   const CHAT_URL = `${API_BASE}/ollama/chat`;
 
   const listRef = useRef(null);
+  
+  // === 2. ITHA ADD PANNUNGA ===
+  // Page load aanathum 5 second timer start pannum
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // 5 sec kalichi, user innum ethuvum click pannalana...
+      if (!userInteractedRef.current) {
+        setIsOpen(true); // Modal-a open pannu
+      }
+    }, 5000); // 5 seconds
+
+    // Cleanup
+    return () => clearTimeout(timer);
+  }, [setIsOpen]); // Ithu ore oru thadava mattum thaan run aagum
+  // ==============================
+  
   useEffect(() => {
     if (isOpen && listRef.current) { 
       listRef.current.scrollTop = listRef.current.scrollHeight;
@@ -225,9 +251,15 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
   return (
     <div>
-        {/* Toggle Floating Button */}
+      {/* Toggle Floating Button */}
       <button
-        onClick={() => setIsOpen((v) => !v)}
+        // === 3. ITHA MAATHUNGA ===
+        // User click pannitaanga-nu note pannikolvom
+        onClick={() => {
+          setIsOpen((v) => !v);
+          setUserInteracted(true); 
+        }}
+        // ==========================
         aria-label="Ask"
         style={{
           position: 'fixed',
@@ -247,12 +279,12 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
           border: 'none',
           cursor: 'pointer',
           
-          /* === MARUBADIYUM ITHA ADD PANNUNGA === */
+          /* Animation code inga correct-a irukku */
           animation: 'pulse-ask-button 2.5s ease-in-out infinite',
           
         }}
       >
-        ? {/* <-- Inga <span> venam, direct-a '?' podunga */}
+        ?
       </button>
 
       {isOpen && (
@@ -303,7 +335,6 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               </div>
             </div>
 
-            {/* === START: ITHA MAATHIRUKKOM === */}
             {/* Right Side Wrapper */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               {/* Model Select */}
@@ -328,7 +359,13 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
               {/* New Close Button */}
               <button
-                onClick={() => setIsOpen(false)} // Click panna chat close aagum
+                // === 4. ITHA MAATHUNGA ===
+                // User close pannitaangalum note pannikolvom
+                onClick={() => {
+                  setIsOpen(false); 
+                  setUserInteracted(true);
+                }}
+                // ==========================
                 title="Close chat"
                 style={{
                   background: 'none',
@@ -344,8 +381,6 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
                 &times; 
               </button>
             </div>
-            {/* === END: MAATHAM MUDINJUTHU === */}
-
           </div>
 
           {/* Messages */}
@@ -447,7 +482,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               ➤
             </button>
           </div>
-          <p>   Dude AI can make mistakes, so double-check it</p>
+          <p>`            Dude AI can make mistakes, so double-check it`</p>
         </div>
       )}
     </div>
@@ -455,7 +490,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 }
 
 function Bubble({ role, content }) {
-  // ... (Bubble component appadiye irukkattum)
+  // ... (Intha function-la entha maathamum illa)
   const me = role === 'user';
   const ref = React.useRef(null);
   const text = (content || '').replace(/\r/g, '').replace(/\n{3,}/g, '\n\n').replace(/[ \t]+\n/g, '\n').trim();
