@@ -5,7 +5,7 @@ import Tesseract from 'tesseract.js';
 
 /** --- Stream Chat Helper --- **/
 async function streamChat({ url, payload, onChunk }) {
-  // ... (ellam code appadiye irukkattum)
+  // ... (Intha function-la entha maathamum illa)
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -77,7 +77,7 @@ async function streamChat({ url, payload, onChunk }) {
 
 /** --- DB Saver --- **/
 async function saveChatToDB(role, content) {
-  // ... (ellam code appadiye irukkattum)
+  // ... (Intha function-la entha maathamum illa)
   try {
     await fetch(`${import.meta.env.VITE_API_URL}/chat`, {
       method: 'POST',
@@ -89,11 +89,20 @@ async function saveChatToDB(role, content) {
   }
 }
 
-export default function AskAssistant({ isOpen, setIsOpen }) { 
+export default function AskAssistant({ isOpen, setIsOpen }) {
+  // === 1. User Interaction state ===
+  const [userInteracted, _setUserInteracted] = useState(false);
+  const userInteractedRef = useRef(userInteracted);
+  const setUserInteracted = (val) => {
+    _setUserInteracted(val);
+    userInteractedRef.current = val;
+  };
+  // ==============================
+
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [model, setModel] = useState('kimi-k2:1t-cloud');
-  const [messages, setMessages] = useState([
+   const [messages, setMessages] = useState([
     // ... (messages array appadiye irukkattum)
    {
   role: 'system',
@@ -122,32 +131,51 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
   ]);
 
   const API_BASE = useMemo(() => {
-    // ... (ellam code appadiye irukkattum)
+    // ... (ithula maatham illa)
     const raw = import.meta.env.VITE_API_URL || '/api';
     return String(raw).replace(/\/$/, '');
   }, []);
   const CHAT_URL = `${API_BASE}/ollama/chat`;
 
   const listRef = useRef(null);
+  
+  // === 2. 5-second timer ===
   useEffect(() => {
-    if (isOpen && listRef.current) { 
+    const timer = setTimeout(() => {
+      if (!userInteractedRef.current) {
+        setIsOpen(true);
+      }
+    }, 5000); 
+
+    return () => clearTimeout(timer);
+  }, [setIsOpen]);
+  // ==============================
+  
+  useEffect(() => {
+    if (isOpen && listRef.current) {
       listRef.current.scrollTop = listRef.current.scrollHeight;
     }
-  }, [isOpen, messages]); 
+  }, [isOpen, messages]);
 
-  // ... (send, onKeyDown, onPickImage functions ellam appadiye irukkattum)
+  // === send function (FIXED) ===
   async function send() {
     const text = input.trim();
     if (!text || busy) return;
 
     const next = [...messages, { role: 'user', content: text }];
     setMessages(next);
+    
+    // *** FIX 1: Input box-a udane empty pannurom ***
+    setInput(''); 
+    
+    // UI update aayiduchu, ippo DB save pannalam
     await saveChatToDB('user', text);
-    setInput('');
 
     const idx = next.length;
     setMessages((m) => [...m, { role: 'assistant', content: '' }]);
-    setBusy(true);
+    
+    // Button-a disable pannurom
+    setBusy(true); 
 
     try {
       const result = await streamChat({
@@ -188,7 +216,8 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
     } catch (e) {
       setMessages((m) => [...m, { role: 'assistant', content: `⚠️ ${e?.message || e}` }]);
     } finally {
-      setBusy(false);
+      // Response alladhu Error vanthathum, button-a enable pannurom
+      setBusy(false); 
     }
   }
 
@@ -203,7 +232,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
     const file = e.target.files?.[0];
     if (!file) return;
     try {
-      setBusy(true);
+      setBusy(true); // OCR pannum podhum button disable pannurom
       const { data } = await Tesseract.recognize(file, 'eng+tam');
       const text = (data?.text || '').trim();
       if (text) {
@@ -217,7 +246,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
     } catch (err) {
       setMessages((m) => [...m, { role: 'assistant', content: `⚠️ OCR error: ${err?.message || err}` }]);
     } finally {
-      setBusy(false);
+      setBusy(false); // OCR mudinjathum button enable pannurom
       e.target.value = '';
     }
   }
@@ -225,9 +254,14 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
   return (
     <div>
-        {/* Toggle Floating Button */}
+      {/* Toggle Floating Button */}
       <button
-        onClick={() => setIsOpen((v) => !v)}
+        // === 3. User interaction ===
+        onClick={() => {
+          setIsOpen((v) => !v);
+          setUserInteracted(true); 
+        }}
+        // ==========================
         aria-label="Ask"
         style={{
           position: 'fixed',
@@ -246,13 +280,10 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
           fontSize: 20,
           border: 'none',
           cursor: 'pointer',
-          
-          /* === MARUBADIYUM ITHA ADD PANNUNGA === */
           animation: 'pulse-ask-button 2.5s ease-in-out infinite',
-          
         }}
       >
-        ? {/* <-- Inga <span> venam, direct-a '?' podunga */}
+        ?
       </button>
 
       {isOpen && (
@@ -303,7 +334,6 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               </div>
             </div>
 
-            {/* === START: ITHA MAATHIRUKKOM === */}
             {/* Right Side Wrapper */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               {/* Model Select */}
@@ -328,29 +358,31 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
               {/* New Close Button */}
               <button
-                onClick={() => setIsOpen(false)} // Click panna chat close aagum
+                // === 4. User interaction ===
+                onClick={() => {
+                  setIsOpen(false); 
+                  setUserInteracted(true);
+                }}
+                // ==========================
                 title="Close chat"
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: '#aab1c2', // Muted color
-                  fontSize: 24,      // "×" size
+                  color: '#aab1c2', 
+                  fontSize: 24,    
                   fontWeight: 700,
                   cursor: 'pointer',
                   padding: '0 4px',
-                  lineHeight: 0.8,   // "×" symbol-a center panna
+                  lineHeight: 0.8, 
                 }}
               >
                 &times; 
               </button>
             </div>
-            {/* === END: MAATHAM MUDINJUTHU === */}
-
           </div>
 
           {/* Messages */}
           <div ref={listRef} style={{ flex: 1, overflowY: 'auto', padding: 12, display: 'grid', gap: 10 }}>
-            {/* ... (Messages content ellam appadiye irukkattum) ... */}
             {messages.filter((m) => m.role !== 'system').map((m, i) => (
               <Bubble key={i} role={m.role} content={m.content} />
             ))}
@@ -367,7 +399,6 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               alignItems: 'flex-end',
             }}
           >
-            {/* ... (Composer content ellam appadiye irukkattum) ... */}
             <label
               htmlFor="imageUpload"
               style={{
@@ -447,21 +478,27 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               ➤
             </button>
           </div>
-          <p>   Dude AI can make mistakes, so double-check it</p>
+          <p style={{textAlign: 'center', fontSize: 11, color: '#aab1c2', margin: '8px 0'}}>
+            Dude AI can make mistakes, so double-check it
+          </p>
         </div>
       )}
     </div>
   );
 }
 
+// === Bubble Component (FIXED) ===
 function Bubble({ role, content }) {
-  // ... (Bubble component appadiye irukkattum)
   const me = role === 'user';
   const ref = React.useRef(null);
+  
+  // 'content' null alladhu undefined-a iruntha kooda safe-a handle pannum
   const text = (content || '').replace(/\r/g, '').replace(/\n{3,}/g, '\n\n').replace(/[ \t]+\n/g, '\n').trim();
 
   useEffect(() => {
-    if (!ref.current) return;
+    // ref.current irukkanum, matrum athukulla text-um iruntha mattum run pannu
+    if (!ref.current || !text) return; 
+
     try {
       renderMathInElement(ref.current, {
         delimiters: [
@@ -473,13 +510,16 @@ function Bubble({ role, content }) {
         throwOnError: false,
         strict: 'ignore',
       });
-    } catch {}
-  }, [text]);
+    } catch (err) {
+      // *** FIX 2: Error-a console-la kaatturom ***
+      console.error('KaTeX rendering error:', err);
+    }
+  }, [text]); // 'text' maarum bodhu intha effect run aagum
 
   return (
     <div style={{ display: 'flex', justifyContent: me ? 'flex-end' : 'flex-start' }}>
       <div
-        ref={ref}
+        ref={ref} // Itha vechi thaan 'ref.current' set aaguthu
         style={{
           maxWidth: 280,
           whiteSpace: 'pre-wrap',
@@ -495,7 +535,7 @@ function Bubble({ role, content }) {
           overflowX: 'auto',
         }}
       >
-        {text}
+        {text} {/* 'text' content inga render aaguthu */}
       </div>
     </div>
   );
