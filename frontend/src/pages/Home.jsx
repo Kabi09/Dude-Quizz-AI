@@ -38,7 +38,7 @@ export default function Home(){
   It has been identified that several answers are incorrect. A correction is
   required{" "}
   <strong style={{ fontWeight: 600, color: "#0f172a" }}>
-    within the next 48 hours.
+    within the next 24 hours.
   </strong>
 </h3>
 
