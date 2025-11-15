@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom'; // ⭐ uses Link for breadcrumbs
 import { getQuestions } from '../api';
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function QuestionTypes() {
   const { classId, subject, unit_no, unit_name } = useParams();
@@ -86,11 +87,8 @@ export default function QuestionTypes() {
       <h2 style={{ marginTop: 0 }}>Question Types</h2>
 
       {loading ? (
-        // ⭐ your simple spinner (no LoadingSpinner import)
-        <div className="spinner-wrapper">
-          <div className="spinner"></div>
-        </div>
-      ) : (
+  <LoadingSpinner />
+       ) : (
         <div className="grid cols-3">
           {types.map(({ type, sections }) => {
             const displaySections =

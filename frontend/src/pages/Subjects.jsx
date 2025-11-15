@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom'; // ⭐ UPDATED: added Link
 import { getSubjects } from '../api';
+import LoadingSpinner from "../components/LoadingSpinner";
+
 
 export default function Subjects() {
   const { classId } = useParams();
@@ -36,10 +38,8 @@ export default function Subjects() {
       <h2 style={{ marginTop: 0 }}>Subjects</h2>
 
       {loading ? (
-        <div className="spinner-wrapper">
-          <div className="spinner"></div>
-        </div>
-      ) : (
+  <LoadingSpinner />
+) : (
         <div className="grid cols-3">
           {subjects.map((s) => (
             <div

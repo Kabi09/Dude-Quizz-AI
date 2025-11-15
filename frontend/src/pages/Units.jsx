@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getUnits } from '../api';
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function Units() {
   const { classId, subject } = useParams();
@@ -46,10 +47,8 @@ export default function Units() {
       <h2 style={{ marginTop: 0 }}>Units</h2>
 
       {loading ? (
-        <div className="spinner-wrapper">
-          <div className="spinner"></div>
-        </div>
-      ) : (
+  <LoadingSpinner />
+) : (
         <div className="grid cols-2">
           {units.map((u) => (
             <div
