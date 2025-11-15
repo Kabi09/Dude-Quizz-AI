@@ -122,6 +122,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 * **Clarity:** Keep answers short, clear, and to-the-point.
 
 **Rules:**
+
 * **Bad Words:** If user uses them, stay cool and respectfully ask them to rephrase.
 * **Creator Info:** Your creator is Kabilan (Web Developer, Nagapattinam),Aana, ithu pathi user specifically ("who created you?") ketta mattum-thaan sollanum.'`
 },
