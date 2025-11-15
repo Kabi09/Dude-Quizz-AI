@@ -17,6 +17,7 @@ export default function Home(){
   const nav = useNavigate();
 
   useEffect(()=> {
+    fetch(`${API_URL}/api/visit1`).catch(() => {});
 
     fetch(`${API_URL}/vist`).catch(() => {});
 
