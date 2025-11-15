@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'; // <--- useEffect, useRef, useState irukka-nu check pannikonga
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import 'katex/dist/katex.min.css';
 import renderMathInElement from 'katex/contrib/auto-render';
 import Tesseract from 'tesseract.js';
@@ -89,11 +89,9 @@ async function saveChatToDB(role, content) {
   }
 }
 
-export default function AskAssistant({ isOpen, setIsOpen }) { 
-  // === 1. ITHA ADD PANNUNGA ===
-  // User button-a click pannitara-nu track panna
+export default function AskAssistant({ isOpen, setIsOpen }) {
+  // === 1. User Interaction state ===
   const [userInteracted, _setUserInteracted] = useState(false);
-  // Timer-kulla correct state kidaikka ref use pannurom
   const userInteractedRef = useRef(userInteracted);
   const setUserInteracted = (val) => {
     _setUserInteracted(val);
@@ -105,11 +103,10 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
   const [busy, setBusy] = useState(false);
   const [model, setModel] = useState('kimi-k2:1t-cloud');
   const [messages, setMessages] = useState([
-    // ... (messages array appadiye irukkattum)
-   {
-  role: 'system',
-  content:
-   `'Your name is Dude AI. Be a friendly best friend (machi, bro) for Tamil medium students (Std 5-12).
+    {
+      role: 'system',
+      content:
+       `'Your name is Dude AI. Be a friendly best friend (machi, bro) for Tamil medium students (Std 5-12).
 
 **Mission:**
 1.  **Simple Tamil:** Explain complex topics (Maths, Science) in simple Tamil.
@@ -125,7 +122,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
 * **Bad Words:** If user uses them, stay cool and respectfully ask them to rephrase.
 * **Creator Info:** Your creator is Kabilan (Web Developer, Nagapattinam),Aana, ithu pathi user specifically ("who created you?") ketta mattum-thaan sollanum.'`
-},
+    },
     {
       role: 'assistant',
       content: 'Machi! நான் Dude AI. என்ன doubt Machi? சொல்லு, நம்ம நண்பனா பேசலாம் 😊',
@@ -141,40 +138,43 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
   const listRef = useRef(null);
   
-  // === 2. ITHA ADD PANNUNGA ===
-  // Page load aanathum 5 second timer start pannum
+  // === 2. 5-second timer ===
   useEffect(() => {
     const timer = setTimeout(() => {
-      // 5 sec kalichi, user innum ethuvum click pannalana...
       if (!userInteractedRef.current) {
-        setIsOpen(true); // Modal-a open pannu
+        setIsOpen(true);
       }
-    }, 5000); // 5 seconds
+    }, 5000); 
 
-    // Cleanup
     return () => clearTimeout(timer);
-  }, [setIsOpen]); // Ithu ore oru thadava mattum thaan run aagum
+  }, [setIsOpen]);
   // ==============================
   
   useEffect(() => {
-    if (isOpen && listRef.current) { 
+    if (isOpen && listRef.current) {
       listRef.current.scrollTop = listRef.current.scrollHeight;
     }
-  }, [isOpen, messages]); 
+  }, [isOpen, messages]);
 
-  // ... (send, onKeyDown, onPickImage functions ellam appadiye irukkattum)
+  // === send function (FIXED) ===
   async function send() {
     const text = input.trim();
     if (!text || busy) return;
 
     const next = [...messages, { role: 'user', content: text }];
     setMessages(next);
+    
+    // *** FIX 1: Input box-a udane empty pannurom ***
+    setInput(''); 
+    
+    // UI update aayiduchu, ippo DB save pannalam
     await saveChatToDB('user', text);
-    setInput('');
 
     const idx = next.length;
     setMessages((m) => [...m, { role: 'assistant', content: '' }]);
-    setBusy(true);
+    
+    // Button-a disable pannurom
+    setBusy(true); 
 
     try {
       const result = await streamChat({
@@ -215,7 +215,8 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
     } catch (e) {
       setMessages((m) => [...m, { role: 'assistant', content: `⚠️ ${e?.message || e}` }]);
     } finally {
-      setBusy(false);
+      // Response alladhu Error vanthathum, button-a enable pannurom
+      setBusy(false); 
     }
   }
 
@@ -230,7 +231,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
     const file = e.target.files?.[0];
     if (!file) return;
     try {
-      setBusy(true);
+      setBusy(true); // OCR pannum podhum button disable pannurom
       const { data } = await Tesseract.recognize(file, 'eng+tam');
       const text = (data?.text || '').trim();
       if (text) {
@@ -244,7 +245,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
     } catch (err) {
       setMessages((m) => [...m, { role: 'assistant', content: `⚠️ OCR error: ${err?.message || err}` }]);
     } finally {
-      setBusy(false);
+      setBusy(false); // OCR mudinjathum button enable pannurom
       e.target.value = '';
     }
   }
@@ -254,8 +255,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
     <div>
       {/* Toggle Floating Button */}
       <button
-        // === 3. ITHA MAATHUNGA ===
-        // User click pannitaanga-nu note pannikolvom
+        // === 3. User interaction ===
         onClick={() => {
           setIsOpen((v) => !v);
           setUserInteracted(true); 
@@ -279,10 +279,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
           fontSize: 20,
           border: 'none',
           cursor: 'pointer',
-          
-          /* Animation code inga correct-a irukku */
           animation: 'pulse-ask-button 2.5s ease-in-out infinite',
-          
         }}
       >
         ?
@@ -360,8 +357,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
               {/* New Close Button */}
               <button
-                // === 4. ITHA MAATHUNGA ===
-                // User close pannitaangalum note pannikolvom
+                // === 4. User interaction ===
                 onClick={() => {
                   setIsOpen(false); 
                   setUserInteracted(true);
@@ -371,12 +367,12 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: '#aab1c2', // Muted color
-                  fontSize: 24,      // "×" size
+                  color: '#aab1c2', 
+                  fontSize: 24,    
                   fontWeight: 700,
                   cursor: 'pointer',
                   padding: '0 4px',
-                  lineHeight: 0.8,   // "×" symbol-a center panna
+                  lineHeight: 0.8, 
                 }}
               >
                 &times; 
@@ -386,7 +382,6 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
           {/* Messages */}
           <div ref={listRef} style={{ flex: 1, overflowY: 'auto', padding: 12, display: 'grid', gap: 10 }}>
-            {/* ... (Messages content ellam appadiye irukkattum) ... */}
             {messages.filter((m) => m.role !== 'system').map((m, i) => (
               <Bubble key={i} role={m.role} content={m.content} />
             ))}
@@ -403,7 +398,6 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               alignItems: 'flex-end',
             }}
           >
-            {/* ... (Composer content ellam appadiye irukkattum) ... */}
             <label
               htmlFor="imageUpload"
               style={{
@@ -483,21 +477,27 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
               ➤
             </button>
           </div>
-          <p>`            Dude AI can make mistakes, so double-check it`</p>
+          <p style={{textAlign: 'center', fontSize: 11, color: '#aab1c2', margin: '8px 0'}}>
+            Dude AI can make mistakes, so double-check it
+          </p>
         </div>
       )}
     </div>
   );
 }
 
+// === Bubble Component (FIXED) ===
 function Bubble({ role, content }) {
-  // ... (Intha function-la entha maathamum illa)
   const me = role === 'user';
   const ref = React.useRef(null);
+  
+  // 'content' null alladhu undefined-a iruntha kooda safe-a handle pannum
   const text = (content || '').replace(/\r/g, '').replace(/\n{3,}/g, '\n\n').replace(/[ \t]+\n/g, '\n').trim();
 
   useEffect(() => {
-    if (!ref.current) return;
+    // ref.current irukkanum, matrum athukulla text-um iruntha mattum run pannu
+    if (!ref.current || !text) return; 
+
     try {
       renderMathInElement(ref.current, {
         delimiters: [
@@ -509,13 +509,16 @@ function Bubble({ role, content }) {
         throwOnError: false,
         strict: 'ignore',
       });
-    } catch {}
-  }, [text]);
+    } catch (err) {
+      // *** FIX 2: Error-a console-la kaatturom ***
+      console.error('KaTeX rendering error:', err);
+    }
+  }, [text]); // 'text' maarum bodhu intha effect run aagum
 
   return (
     <div style={{ display: 'flex', justifyContent: me ? 'flex-end' : 'flex-start' }}>
       <div
-        ref={ref}
+        ref={ref} // Itha vechi thaan 'ref.current' set aaguthu
         style={{
           maxWidth: 280,
           whiteSpace: 'pre-wrap',
@@ -531,23 +534,8 @@ function Bubble({ role, content }) {
           overflowX: 'auto',
         }}
       >
-        {text}
+        {text} {/* 'text' content inga render aaguthu */}
       </div>
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
