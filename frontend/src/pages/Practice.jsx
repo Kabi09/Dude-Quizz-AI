@@ -15,28 +15,38 @@ import OddOneOut from '../practice/OddOneOut';
 import Analogies from '../practice/Analogies';
 import Ordering from '../practice/Ordering';
 import Abbreviation from '../practice/Abbreviation';
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function Practice() {
   const { classId, subject, unit_no, unit_name, type } = useParams();
   const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
+
     getQuestions({
       class: classId,
       subject,
       unit_no,
       unit_name,
-      type
+      type,
     })
-    .then(setQuestions)
-    .catch(() => setQuestions([]));
+      .then((qs) => {
+        setQuestions(qs || []);
+        setLoading(false);
+      })
+      .catch(() => {
+        setQuestions([]);
+        setLoading(false);
+      });
+    // 🔧 include unit_name + type so it refetches correctly
   }, [classId, subject, unit_no, unit_name, type]);
 
   const t = (type || '').toLowerCase().trim();
 
   return (
     <div>
-
       {/* ⭐ CLICKABLE BREADCRUMBS */}
       <div className="breadcrumbs">
         <Link to="/" className="crumb-link">
@@ -75,40 +85,48 @@ export default function Practice() {
         <span className="muted">{type}</span>
       </div>
 
-      {/* NO QUESTIONS */}
-      {(!questions || questions.length === 0) && (
+      {/* 🔄 LOADING / EMPTY / CONTENT */}
+      {loading ? (
+        <LoadingSpinner />
+      ) : !questions || questions.length === 0 ? (
         <div className="card p-4">No questions found for this filter.</div>
-      )}
-
-      {/* QUESTION TYPE RENDERING */}
-      {questions && questions.length > 0 && (
+      ) : (
         <>
+          {/* MCQ / simple types */}
           {t === 'mcq' && <PracticeMCQ questions={questions} />}
-          {(t === 'fillintheblank' || t === 'fill' || t === 'fill_in_the_blank') && (
+
+          {(t === 'fillintheblank' ||
+            t === 'fill' ||
+            t === 'fill_in_the_blank') && (
             <PracticeFill questions={questions} />
           )}
+
           {(t === 'truefalse' || t === 'true_false') && (
             <TrueFalse questions={questions} />
           )}
+
           {(t === 'assertionreason' || t === 'assertion_reason') && (
             <AssertionReason questions={questions} />
           )}
+
           {(t === 'shortanswer' || t === 'short_answer') && (
             <ShortAnswer questions={questions} />
           )}
 
-          {/* Matching Types */}
+          {/* Matching styles */}
           {(t === 'match' || t === 'matching') && (
             <PracticeMatch questions={questions} />
           )}
+
           {(t === 'matching_mcq' || t === 'matching-mcq') && (
             <Matching_MCQ questions={questions} />
           )}
 
-          {/* Special Types */}
-          {(t === 'oddoneout' || t === 'odd_one_out' || t === 'odd-one-out' || t === 'odd') && (
-            <OddOneOut questions={questions} />
-          )}
+          {/* Special styles */}
+          {(t === 'oddoneout' ||
+            t === 'odd_one_out' ||
+            t === 'odd-one-out' ||
+            t === 'odd') && <OddOneOut questions={questions} />}
 
           {(t === 'analogies' || t === 'analogy') && (
             <Analogies questions={questions} />
@@ -118,21 +136,38 @@ export default function Practice() {
             <Ordering questions={questions} />
           )}
 
-          {(t === 'abbreviation' || t === 'abbreviations' || t === 'abbr') && (
-            <Abbreviation questions={questions} />
-          )}
+          {(t === 'abbreviation' ||
+            t === 'abbreviations' ||
+            t === 'abbr') && <Abbreviation questions={questions} />}
 
-          {/* Fallback */}
+          {/* fallback */}
           {![
-            'mcq','fill','fillintheblank','fill_in_the_blank',
-            'truefalse','true_false','assertionreason','assertion_reason',
-            'shortanswer','short_answer','match','matching',
-            'matching_mcq','matching-mcq','oddoneout','odd_one_out',
-            'odd-one-out','odd','analogies','analogy','ordering','order',
-            'abbreviation','abbreviations','abbr'
-          ].includes(t) && (
-            <PracticeGeneric questions={questions} type={type} />
-          )}
+            'mcq',
+            'fill',
+            'fillintheblank',
+            'fill_in_the_blank',
+            'truefalse',
+            'true_false',
+            'assertionreason',
+            'assertion_reason',
+            'shortanswer',
+            'short_answer',
+            'match',
+            'matching',
+            'matching_mcq',
+            'matching-mcq',
+            'oddoneout',
+            'odd_one_out',
+            'odd-one-out',
+            'odd',
+            'analogies',
+            'analogy',
+            'ordering',
+            'order',
+            'abbreviation',
+            'abbreviations',
+            'abbr',
+          ].includes(t) && <PracticeGeneric questions={questions} type={type} />}
         </>
       )}
     </div>
