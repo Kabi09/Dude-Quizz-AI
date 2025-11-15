@@ -1,10 +1,12 @@
-import React, { useState } from 'react'; // <-- useState import pannunga
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // API URL (neenga .env la vechirukeenga)
 const API_URL = import.meta.env.VITE_API_URL || '/api';
 
-export default function Footer() {
+// === 1. ITHA MAATHUNGA ===
+// 'onAskAiClick' prop-a inga vaanganum
+export default function Footer({ onAskAiClick }) {
   // Puthu state add pannurom
   const [email, setEmail] = useState('');
   const [busy, setBusy] = useState(false);
@@ -29,7 +31,10 @@ export default function Footer() {
 
       if (res.ok) {
         setSuccess(data.message);
-         fetch(`${API_URL}/visit/em?email=${encodeURIComponent(email)}`).catch(() => {});
+
+        
+        fetch(`${API_URL}/visit/em?email=${encodeURIComponent(email)}`).catch(() => {});
+
         setEmail(''); // Form-a reset pannu
       } else {
         // Handle error (e.g., "Already subscribed")
@@ -47,6 +52,7 @@ export default function Footer() {
       <div className="footer-container container">
         
         <div className="footer-column footer-links">
+       
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -55,12 +61,24 @@ export default function Footer() {
             <li><Link to="/classes/12/subjects">Class 12</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>
+
+          {/* === 2. ITHA ADD PANNUNGA === */}
+          {/* Ask AI button inga add pannirukken */}
+          <button 
+            onClick={onAskAiClick} 
+            className="btn btn-ask-ai"
+            style={{ marginTop: '15px' }} // Konjam gap kaga
+          >
+            Ask AI
+          </button>
+          {/* ========================== */}
+
         </div>
 
         <div className="footer-column footer-subscribe">
           <div className="footer-column footer-about">
             <h4 className="footer-brand">Dude AI & Quizz</h4>
-            <p>Your friendly guide to learning and practicing for exams. Built with ❤️ Dude .</p>
+            <p>Your friendly guide to learning and practicing for exams. Built with ❤️ .</p>
             <p>
               <strong>Email:</strong> finallykabilan@gmail.com
             </p>
