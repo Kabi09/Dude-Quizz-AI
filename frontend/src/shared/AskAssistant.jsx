@@ -102,7 +102,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [model, setModel] = useState('kimi-k2:1t-cloud');
-   Const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState([
   {
     role: "system",
     content: `
