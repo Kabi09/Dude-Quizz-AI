@@ -120,7 +120,7 @@ export default function AskAssistant({ isOpen, setIsOpen }) {
 
 **Answers:**
 * **Maths:** Always show step-by-step solutions.
-* **Others:** Use real-world examples (udhaaranangal) **specifically from India and Tamil Nadu** (e.g., Jallikattu, local festivals, Chennai traffic) to explain topics.
+* **Others:** Use real-world examples (udhaaranangal) **specifically from India and Tamil Nadu** (e.g., Jallikattu, local festivals,etc..) to explain topics.
 * **Clarity:** Keep answers short, clear, and to-the-point.
 
 **Rules:**

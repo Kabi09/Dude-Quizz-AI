@@ -38,7 +38,7 @@ export default function Home(){
     <div>
 
 
-<h3
+{/* <h3
   style={{
     background: "#f8fafc",
     padding: "14px 18px",
@@ -57,7 +57,7 @@ export default function Home(){
   <strong style={{ fontWeight: 600, color: "#0f172a" }}>
     within the next 24 hours.
   </strong>
-</h3>
+</h3> */}
 
       <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:16}}>
         <div>
