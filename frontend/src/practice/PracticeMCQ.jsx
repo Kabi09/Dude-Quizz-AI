@@ -179,7 +179,7 @@ export default function PracticeMCQ({ questions }) {
           return next < total ? next : prev;
         });
         autoNextRef.current = null;
-      }, 3000);
+      }, 2500);
     }
   }
 
