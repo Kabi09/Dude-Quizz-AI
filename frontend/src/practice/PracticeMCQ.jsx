@@ -1,8 +1,7 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import RenderWithMath from '../shared/RenderWithMath';
 import ScoreDashboard from '../shared/ScoreDashboard';
 import { getImageUrl } from '../utils/getImageUrl';
-
 
 // helper to extract text from option value (No change)
 function extractText(v) {
@@ -27,161 +26,276 @@ function extractText(v) {
   try { return JSON.stringify(v); } catch (e) { return String(v); }
 }
 
+// correct text for any question
+function getCorrectTextForQuestion(question) {
+  if (!question) return '';
+  const ansKey = question.content?.answer ?? question.answer;
+  if (question.content?.options && ansKey && typeof question.content.options[ansKey] !== 'undefined') {
+    return extractText(question.content.options[ansKey]);
+  }
+  return extractText(ansKey);
+}
+
 export default function PracticeMCQ({ questions }) {
   const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState([]); 
+
+  // per-question answers
+  const [answers, setAnswers] = useState([]);
   const [showDashboard, setShowDashboard] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null); 
-  const [isAnswered, setIsAnswered] = useState(false);      
 
-  const q = questions && questions.length ? questions[index] : null;
+  // 🔹 store auto-next timeout id
+  const autoNextRef = useRef(null);
+
   const total = questions ? questions.length : 0;
+  const q = questions && questions.length ? questions[index] : null;
 
-  // optionsWithLabels (No change)
+  // init / reset whenever questions change
+  useEffect(() => {
+    if (!questions || !questions.length) {
+      setAnswers([]);
+      setIndex(0);
+      setShowDashboard(false);
+      if (autoNextRef.current) {
+        clearTimeout(autoNextRef.current);
+        autoNextRef.current = null;
+      }
+      return;
+    }
+
+    const initAnswers = questions.map((question, i) => ({
+      qIndex: i,
+      selectedText: null,
+      correctText: getCorrectTextForQuestion(question),
+      isCorrect: false,
+      isAnswered: false,
+      question,
+    }));
+
+    setAnswers(initAnswers);
+    setIndex(0);
+    setShowDashboard(false);
+    if (autoNextRef.current) {
+      clearTimeout(autoNextRef.current);
+      autoNextRef.current = null;
+    }
+  }, [questions]);
+
+  // cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (autoNextRef.current) {
+        clearTimeout(autoNextRef.current);
+      }
+    };
+  }, []);
+
+  if (!q) return <div className="card">No questions found.</div>;
+
+  const currentAnswer = answers[index] || {};
+  const isAnswered = !!currentAnswer.isAnswered;
+  const selectedText = currentAnswer.selectedText || null;
+
+  // options (shuffled)
   const optionsWithLabels = useMemo(() => {
     if (!q) return [];
     const optsObj = q.content?.options || q.options || {};
-    const items = Object.entries(optsObj).map(([k, v]) => ({ key: k, raw: v, text: extractText(v) }));
+    const items = Object.entries(optsObj).map(([k, v]) => ({
+      key: k,
+      raw: v,
+      text: extractText(v),
+    }));
     const shuffled = [...items];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     const labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    return shuffled.map((it, idx) => ({ label: labels[idx], text: it.text, originalKey: it.key, raw: it.raw }));
+    return shuffled.map((it, idx) => ({
+      label: labels[idx],
+      text: it.text,
+      originalKey: it.key,
+      raw: it.raw,
+    }));
   }, [q, index]);
 
-  // correctText (No change)
   const correctText = useMemo(() => {
     if (!q) return '';
-    const ansKey = q.content?.answer ?? q.answer;
-    if (q.content?.options && ansKey && typeof q.content.options[ansKey] !== 'undefined') {
-      return extractText(q.content.options[ansKey]);
-    }
-    return extractText(ansKey);
-  }, [q]);
+    return currentAnswer.correctText || getCorrectTextForQuestion(q);
+  }, [q, currentAnswer]);
 
-  // handleNext (No change)
+  // helper to clear auto-next timer
+  function clearAutoNext() {
+    if (autoNextRef.current) {
+      clearTimeout(autoNextRef.current);
+      autoNextRef.current = null;
+    }
+  }
+
+  // Next / Prev
   function handleNext() {
-    const next = index + 1;
-    if (next >= total) {
-      setShowDashboard(true);
-    } else {
-      setIndex(next);
-      setIsAnswered(false);
-      setSelectedOption(null);
-    }
+    clearAutoNext();
+    setIndex(prev => {
+      const next = prev + 1;
+      return next < total ? next : prev;
+    });
   }
 
-  // useEffect for auto-next (No change)
-  useEffect(() => {
-    if (isAnswered) {
-      const timer = setTimeout(() => {
-        handleNext();
-      }, 1200); 
-      return () => clearTimeout(timer);
-    }
-  }, [isAnswered]); 
+  function handlePrev() {
+    clearAutoNext();
+    setIndex(prev => {
+      const prevIndex = prev - 1;
+      return prevIndex >= 0 ? prevIndex : prev;
+    });
+  }
 
-
-  if (!q) return <div className="card">No questions found.</div>;
-
-  // handleOptionClick (No change)
+  // Option click
   function handleOptionClick(option) {
-    if (isAnswered) return; 
-    const selectedText = option.text;
-    const isCorrect = selectedText === correctText;
-    setSelectedOption(option); 
-    setIsAnswered(true);       
-    setAnswers(prev => [...prev, { qIndex: index, selectedText, correctText, isCorrect, question: q }]);
+    if (isAnswered) return;
+
+    const selected = option.text;
+    const isCorrect = selected === correctText;
+
+    setAnswers(prev => {
+      const updated = [...prev];
+      const existing = updated[index] || {};
+      updated[index] = {
+        ...existing,
+        qIndex: index,
+        selectedText: selected,
+        correctText: existing.correctText || correctText,
+        isCorrect,
+        isAnswered: true,
+        question: q,
+      };
+      return updated;
+    });
+
+    // 🔹 auto-next only if not last question
+    if (index < total - 1) {
+      clearAutoNext();
+      autoNextRef.current = setTimeout(() => {
+        setIndex(prev => {
+          const next = prev + 1;
+          return next < total ? next : prev;
+        });
+        autoNextRef.current = null;
+      }, 1200);
+    }
   }
 
-  // restart (No change)
+  // restart
   function restart() {
+    clearAutoNext();
+    if (questions && questions.length) {
+      const resetAnswers = questions.map((question, i) => ({
+        qIndex: i,
+        selectedText: null,
+        correctText: getCorrectTextForQuestion(question),
+        isCorrect: false,
+        isAnswered: false,
+        question,
+      }));
+      setAnswers(resetAnswers);
+    } else {
+      setAnswers([]);
+    }
     setIndex(0);
-    setAnswers([]);
     setShowDashboard(false);
-    setIsAnswered(false);
-    setSelectedOption(null);
   }
 
   const imageUrl = q?.image ? getImageUrl(q.image) : null;
+  const answeredCount = answers.filter(a => a && a.isAnswered).length;
 
   return (
     <div>
       <div className="card">
-        {/* Header (No change) */}
+        {/* Header */}
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
           <div className="muted">Question {index + 1} / {total}</div>
-          <div className="muted">Answered: {answers.length}</div>
+          <div className="muted">Answered: {answeredCount}</div>
         </div>
 
-        {/* Question text (No change) */}
+        {/* Prev / Next buttons */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12 }}>
+          <button
+            className="btn ghost"
+            onClick={handlePrev}
+            disabled={index === 0}
+          >
+            Previous
+          </button>
+          <button
+            className="btn ghost"
+            onClick={handleNext}
+            disabled={index === total - 1}
+          >
+            Next
+          </button>
+        </div>
+
+        {/* Question */}
         <div className="question">
-          <RenderWithMath text={q.content?.question || q.content?.statement || q.question || ''} />
+          <RenderWithMath
+            text={q.content?.question || q.content?.statement || q.question || ''}
+          />
         </div>
 
-        {/* Image (No change) */}
-       {imageUrl && (
-  <div style={{ marginBottom: 12, display: 'flex', justifyContent: 'center' }}>
-    <div style={{ 
-      width: '100%', 
-      maxWidth: 220, 
-      aspectRatio: '1 / 1', 
-      borderRadius: 30, 
-      overflow: 'hidden', 
-      background: '#f1f5f9', 
-      boxShadow: '0 4px 12px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05)', 
-      display: 'flex', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      transition: 'transform 0.3s ease-out, box-shadow 0.3s ease-out' 
-    }} >
-      
-      {/* === INGA THAAN FIX === */}
-      <img
-        src={imageUrl}
-        alt={'image not Found'}
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain', // <-- 'cover' ku pathila 'contain' use pannunga
-          // borderRadius and transition inga theva illa, container laye irukku
-        }}
-        loading="lazy"
-      />
-      {/* ===================== */}
+        {/* Image */}
+        {imageUrl && (
+          <div style={{ marginBottom: 12, display: 'flex', justifyContent: 'center' }}>
+            <div
+              style={{
+                width: '100%',
+                maxWidth: 220,
+                aspectRatio: '1 / 1',
+                borderRadius: 30,
+                overflow: 'hidden',
+                background: '#f1f5f9',
+                boxShadow:
+                  '0 4px 12px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05)',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                transition: 'transform 0.3s ease-out, box-shadow 0.3s ease-out',
+              }}
+            >
+              <img
+                src={imageUrl}
+                alt="image not Found"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain',
+                }}
+                loading="lazy"
+              />
+            </div>
+          </div>
+        )}
 
-    </div>
-  </div>
-)}
-
-
-        {/* === START: INGA THAAN STYLE-A MAATHIRUKKOM === */}
+        {/* Options */}
         <div className="options" style={{ marginTop: 12 }}>
           {optionsWithLabels.map(o => {
-            
-            // 1. Inga style-a create pannikalam
             const styleProps = {
               cursor: isAnswered ? 'not-allowed' : 'pointer',
             };
-            
-            let statusText = ''; 
+
+            let statusText = '';
             let statusColor = 'var(--muted)';
 
             if (isAnswered) {
-              const isCorrectOpt = (o.text === correctText);
-              const isChosen = (o.text === selectedOption?.text);
+              const isCorrectOpt = o.text === correctText;
+              const isChosen = o.text === selectedText;
 
               if (isCorrectOpt) {
-                // 2. CSS class-ku pathila, in-line style-a use pannurom (stronger color)
-                styleProps.background = 'linear-gradient(90deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.08))';
+                styleProps.background =
+                  'linear-gradient(90deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.08))';
                 styleProps.borderColor = 'var(--success)';
                 statusText = 'Correct';
                 statusColor = 'var(--success)';
               } else if (isChosen) {
-                // 2. CSS class-ku pathila, in-line style-a use pannurom (stronger color)
-                styleProps.background = 'linear-gradient(90deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.08))';
+                styleProps.background =
+                  'linear-gradient(90deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.08))';
                 styleProps.borderColor = 'var(--danger)';
                 statusText = 'Your choice';
                 statusColor = 'var(--danger)';
@@ -191,14 +305,15 @@ export default function PracticeMCQ({ questions }) {
             return (
               <div
                 key={o.label}
-                className="option" // Base class
+                className="option"
                 onClick={() => handleOptionClick(o)}
-                style={styleProps} // 3. Inga antha style-a apply pannurom
+                style={styleProps}
               >
-                {/* Left Side: Question */}
-                <div><strong>{o.label}.</strong> <RenderWithMath text={o.text} /></div>
+                <div>
+                  <strong>{o.label}.</strong>{' '}
+                  <RenderWithMath text={o.text} />
+                </div>
 
-                {/* Right Side: Status Text (like ScoreDashboard) */}
                 {isAnswered && statusText && (
                   <div style={{ fontWeight: 700, color: statusColor }}>
                     {statusText}
@@ -208,20 +323,44 @@ export default function PracticeMCQ({ questions }) {
             );
           })}
         </div>
-        {/* === END: MAATHAM MUDINJUTHU === */}
 
-        {/* Restart Button (No change) */}
-        <div style={{ display:'flex', justifyContent:'flex-end', marginTop: 14 }}>
-          <button className="btn ghost" onClick={restart}>Restart</button>
+        {/* Bottom buttons */}
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'flex-end',
+            gap: 8,
+            marginTop: 14,
+          }}
+        >
+          <button className="btn ghost" onClick={restart}>
+            Restart
+          </button>
+
+          {/* Submit only on last question */}
+          {index === total - 1 && (
+            <button
+              className="btn primary"
+              onClick={() => {
+                clearAutoNext();
+                setShowDashboard(true);
+              }}
+            >
+              Submit
+            </button>
+          )}
         </div>
       </div>
 
-      {/* ScoreDashboard (No change) */}
+      {/* ScoreDashboard */}
       {showDashboard && (
         <ScoreDashboard
           answers={answers}
           questions={questions}
-          onClose={() => { setShowDashboard(false); restart(); }}
+          onClose={() => {
+            setShowDashboard(false);
+            restart();
+          }}
         />
       )}
     </div>
