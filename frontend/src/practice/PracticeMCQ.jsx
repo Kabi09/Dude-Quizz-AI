@@ -218,14 +218,14 @@ export default function PracticeMCQ({ questions }) {
         {/* Prev / Next buttons */}
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12 }}>
           <button
-            className="btn ghost"
+            className="btn primary"
             onClick={handlePrev}
             disabled={index === 0}
           >
             Previous
           </button>
           <button
-            className="btn ghost"
+            className="btn primary"
             onClick={handleNext}
             disabled={index === total - 1}
           >
